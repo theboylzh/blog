@@ -2,10 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://theboylzh.github.io/blog/posts/design-think/</loc>
+    <lastmod>2025-05-24T23:48:17+08:00</lastmod>
+  </url><url>
     <loc>https://theboylzh.github.io/blog/</loc>
-    <lastmod>2025-05-24T21:25:17+08:00</lastmod>
+    <lastmod>2025-05-24T23:48:17+08:00</lastmod>
   </url><url>
     <loc>https://theboylzh.github.io/blog/posts/</loc>
+    <lastmod>2025-05-24T23:48:17+08:00</lastmod>
+  </url><url>
+    <loc>https://theboylzh.github.io/blog/posts/my-first-post/</loc>
     <lastmod>2025-05-24T21:25:17+08:00</lastmod>
   </url><url>
     <loc>https://theboylzh.github.io/blog/categories/</loc>
