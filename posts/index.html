@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Posts | 去顽野</title>
 <meta name="keywords" content="">
 <meta name="description" content="Posts - 去顽野">
 <meta name="author" content="">
-<link rel="canonical" href="https://theboylzh.github.io/blog/posts/">
-<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://theboylzh.github.io/blog/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://theboylzh.github.io/blog/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://theboylzh.github.io/blog/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://theboylzh.github.io/blog/apple-touch-icon.png">
-<link rel="mask-icon" href="https://theboylzh.github.io/blog/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://theboylzh.github.io/blog/posts/index.xml">
-<link rel="alternate" hreflang="en" href="https://theboylzh.github.io/blog/posts/">
+<link rel="canonical" href="http://localhost:1313/blog/posts/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.24117e94f7185554bf370e131546657a05d72834bf02c67c2a4215d5cf110a80.css" integrity="sha256-JBF&#43;lPcYVVS/Nw4TFUZlegXXKDS/AsZ8KkIV1c8RCoA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/blog/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/blog/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/posts/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/">
+
+<meta name="twitter:title" content="Posts | 去顽野" />
+<meta name="twitter:description" content="" />
+<meta property="og:title" content="Posts | 去顽野" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/blog/posts/" />
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/blog/posts/"
+    }
+  ]
+}
+</script>
 <noscript>
     <style>
         #theme-toggle,
@@ -35,77 +54,111 @@
                 --entry: rgb(46, 46, 51);
                 --primary: rgb(218, 218, 219);
                 --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
+                --tertiary-bg: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
 
-            .list {
+            .list-page {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
+            .list-page:not(.dark)::-webkit-scrollbar-track {
                 background: 0 0;
             }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
+            .list-page:not(.dark)::-webkit-scrollbar-thumb {
                 border-color: var(--theme);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://theboylzh.github.io/blog/posts/">
-  <meta property="og:site_name" content="去顽野">
-  <meta property="og:title" content="Posts">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Posts">
-<meta name="twitter:description" content="">
+</noscript>
 
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://theboylzh.github.io/blog/posts/"
-    }
-  ]
-}
-</script>
 </head>
 
-<body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
+<body class="list-page type-posts kind-section layout-" id="top"><script data-no-instant>
+function switchTheme(theme) {
+  switch (theme) {
+    case 'light':
+      document.body.classList.remove('dark');
+      break;
+    case 'dark':
+      document.body.classList.add('dark');
+      break;
+    
+    default:
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
+      }
+  }
+}
 
+function isDarkTheme() {
+  return document.body.className.includes("dark");
+}
+
+function getPrefTheme() {
+  return localStorage.getItem("pref-theme");
+}
+
+function setPrefTheme(theme) {
+  switchTheme(theme)
+  localStorage.setItem("pref-theme", theme);
+}
+
+const toggleThemeCallbacks = {}
+toggleThemeCallbacks['main'] = (isDark) => {
+  
+  if (isDark) {
+    setPrefTheme('light');
+  } else {
+    setPrefTheme('dark');
+  }
+}
+
+
+
+
+window.addEventListener('toggle-theme', function() {
+  
+  const isDark = isDarkTheme()
+  for (const key in toggleThemeCallbacks) {
+    toggleThemeCallbacks[key](isDark)
+  }
+});
+
+
+function toggleThemeListener() {
+  
+  window.dispatchEvent(new CustomEvent('toggle-theme'));
+}
+
+</script>
+<script>
+  
+  (function() {
+    const defaultTheme = 'light';
+    const prefTheme = getPrefTheme();
+    const theme = prefTheme ? prefTheme : defaultTheme;
+
+    switchTheme(theme);
+  })();
 </script>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://theboylzh.github.io/blog/" accesskey="h" title="去顽野 (Alt + H)">去顽野</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+            <a href="http://localhost:1313/blog/" accesskey="h" title="去顽野 (Alt + H)">去顽野</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -119,26 +172,54 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-            </div>
+            </span>
         </div>
         <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/blog/about/" title="About"
+                >About
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/posts/" title="Post" class="active"
+                >Post
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/tags/" title="Tags"
+                >Tags
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/search/" title="Search (Alt &#43; /)"data-no-instant accesskey=/
+                >Search
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
 <header class="page-header">
   <h1>
-    Posts
-  </h1>
+    Posts</h1><div class="inline-links">
+  
+  
+  <span><a href="http://localhost:1313/blog/posts/index.xml" target="_blank">RSS</a></span></div>
 </header>
+
+
+
+
+
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">设计碎碎念
+    <h2>设计碎碎念
     </h2>
   </header>
-  <div class="entry-content">
-    <p>一、小的实践&amp;设计思维 以下是个人感想：
+  <section class="entry-content">
+    
+      <p>一、小的实践&amp;设计思维 以下是个人感想：
 不要抗拒那些理论上说不好的交互。很多东西亲自去尝试先，不要用思想实验去否认一些可能性。将理论生搬硬套地用于实践，其实也不太合理。
 以下是阅读所得：
 设计思维：作为一种思维方式，设计思维关注如何综合处理问题，强调深入理解问题产生的原因和背景，经由深刻洞察和理性分析，通过跨领域、跨界的协作，找出最恰当的解决方案。
@@ -165,95 +246,128 @@
 人的大脑并非是这样的工具，尤其在我们进行创造力工作的时候，不像工厂流水线工人那样多劳多得了。
 TED 有个演讲者 Rahaf Harfoush 就分享了他的经验。那就是找到促进你创造力的方式，而不是把自己当作一个机器。你所采用的“提高”的方法，也许正是扼杀你创造力的东西。
 ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-05-24 23:48:17 +0800 CST'>May 24, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to 设计碎碎念" href="https://theboylzh.github.io/blog/posts/design-think/"></a>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>May 24, 2025</span></span><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon" style="user-select: text;"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" style="user-select: text;"></path><line x1="7" y1="7" x2="7" y2="7" style="user-select: text;"></line></svg>
+  <span class="post-tags"><a href="http://localhost:1313/blog/tags/%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1/">体验设计</a><a href="http://localhost:1313/blog/tags/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4/">设计思维</a></span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to 设计碎碎念" href="http://localhost:1313/blog/posts/design-think/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">My First Post
+    <h2>My First Post
     </h2>
   </header>
-  <div class="entry-content">
-    <p>Title I am happy to see you!
+  <section class="entry-content">
+    
+      <p>Title I am happy to see you!
 Title2 No money no talk!
 </p>
-  </div>
-  <footer class="entry-footer"><span title='2025-05-24 21:25:17 +0800 CST'>May 24, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to My First Post" href="https://theboylzh.github.io/blog/posts/my-first-post/"></a>
+    
+  </section>
+  <footer class="entry-footer"><span class="meta-item">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="user-select: text;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" style="user-select: text;"></rect><line x1="16" y1="2" x2="16" y2="6" style="user-select: text;"></line><line x1="8" y1="2" x2="8" y2="6" style="user-select: text;"></line><line x1="3" y1="10" x2="21" y2="10" style="user-select: text;"></line></svg>
+  <span>May 24, 2025</span></span>
+</footer>
+  <a class="entry-link" aria-label="post link to My First Post" href="http://localhost:1313/blog/posts/my-first-post/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://theboylzh.github.io/blog/">去顽野</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+  <span>&copy; 2025 <a href="http://localhost:1313/blog/">去顽野</a></span><span style="display: inline-block; margin-left: 1em;">
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
+  </span>
+  <span style="display: inline-block; margin-left: 1em;">
+    Powered by
+    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+    <a href="https://github.com/reorx/hugo-PaperModX/" rel="noopener" target="_blank">PaperModX</a>
+  </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+    <path d="M12 6H0l6-6z" />
+  </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+  (function() {
+     
+    const disableThemeToggle = '' == '1';
+    if (disableThemeToggle) {
+      return;
     }
 
+    let button = document.getElementById("theme-toggle")
+    
+    button.removeEventListener('click', toggleThemeListener)
+    
+    button.addEventListener('click', toggleThemeListener)
+  })();
+</script>
+
+<script>
+  (function () {
+    let menu = document.getElementById('menu')
+    if (menu) {
+      menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+      menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+      }
+    }
+
+    const disableSmoothScroll = '' == '1';
+    const enableInstantClick = '' == '1';
+    
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || disableSmoothScroll || enableInstantClick) {
+      return;
+    }
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        var id = this.getAttribute("href").substr(1);
+        document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+          behavior: "smooth"
         });
+        if (id === "top") {
+          history.replaceState(null, null, " ");
+        } else {
+          history.pushState(null, null, `#${id}`);
+        }
+      });
     });
-
+  })();
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
+  var mybutton = document.getElementById("top-link");
+  window.onscroll = function () {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+      mybutton.style.visibility = "visible";
+      mybutton.style.opacity = "1";
+    } else {
+      mybutton.style.visibility = "hidden";
+      mybutton.style.opacity = "0";
+    }
+  };
 </script>
 <script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
+  if (window.scrollListeners) {
+    
+    for (const listener of scrollListeners) {
+      window.removeEventListener('scroll', listener)
+    }
+  }
+  window.scrollListeners = []
 </script>
+
+
+
+<script src="/blog/js/medium-zoom.min.js" data-no-instant
+></script>
 </body>
 
 </html>

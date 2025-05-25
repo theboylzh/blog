@@ -2,25 +2,43 @@
 <html lang="en" dir="auto">
 
 <head>
-	<meta name="generator" content="Hugo 0.147.5"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.147.5"><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>去顽野</title>
 
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="https://theboylzh.github.io/blog/">
-<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://theboylzh.github.io/blog/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://theboylzh.github.io/blog/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://theboylzh.github.io/blog/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://theboylzh.github.io/blog/apple-touch-icon.png">
-<link rel="mask-icon" href="https://theboylzh.github.io/blog/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://theboylzh.github.io/blog/index.xml">
-<link rel="alternate" hreflang="en" href="https://theboylzh.github.io/blog/">
+<link rel="canonical" href="http://localhost:1313/blog/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.min.24117e94f7185554bf370e131546657a05d72834bf02c67c2a4215d5cf110a80.css" integrity="sha256-JBF&#43;lPcYVVS/Nw4TFUZlegXXKDS/AsZ8KkIV1c8RCoA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/blog/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/blog/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/blog/index.json">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/">
+
+<meta name="twitter:title" content="去顽野" />
+<meta name="twitter:description" content="" />
+<meta property="og:title" content="去顽野" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/blog/" />
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "去顽野",
+  "url": "http://localhost:1313/blog/",
+  "description": "",
+  "thumbnailUrl": "http://localhost:1313/blog/favicon.ico",
+  "sameAs": [
+      "https://github.com/theboylzh", "mailto:theboylzh@163.com", "https://www.xiaohongshu.com/user/profile/65cc47e7000000000401c841"
+  ]
+}
+</script>
 <noscript>
     <style>
         #theme-toggle,
@@ -36,75 +54,111 @@
                 --entry: rgb(46, 46, 51);
                 --primary: rgb(218, 218, 219);
                 --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
+                --tertiary-bg: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
 
-            .list {
+            .list-page {
                 background: var(--theme);
             }
 
-            .list:not(.dark)::-webkit-scrollbar-track {
+            .list-page:not(.dark)::-webkit-scrollbar-track {
                 background: 0 0;
             }
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
+            .list-page:not(.dark)::-webkit-scrollbar-thumb {
                 border-color: var(--theme);
             }
         }
 
     </style>
-</noscript><meta property="og:url" content="https://theboylzh.github.io/blog/">
-  <meta property="og:site_name" content="去顽野">
-  <meta property="og:title" content="去顽野">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="去顽野">
-<meta name="twitter:description" content="">
+</noscript>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "去顽野",
-  "url": "https://theboylzh.github.io/blog/",
-  "description": "",
-  "logo": "https://theboylzh.github.io/blog/favicon.ico",
-  "sameAs": [
-      "https://x.com/shuxin_app", "mailto:theboylzh@163.com", "https://www.xiaohongshu.com/user/profile/65cc47e7000000000401c841"
-  ]
-}
-</script>
 </head>
 
-<body class="list" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
+<body class="list-page type-page kind-home layout-" id="top"><script data-no-instant>
+function switchTheme(theme) {
+  switch (theme) {
+    case 'light':
+      document.body.classList.remove('dark');
+      break;
+    case 'dark':
+      document.body.classList.add('dark');
+      break;
+    
+    default:
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
+      }
+  }
+}
 
+function isDarkTheme() {
+  return document.body.className.includes("dark");
+}
+
+function getPrefTheme() {
+  return localStorage.getItem("pref-theme");
+}
+
+function setPrefTheme(theme) {
+  switchTheme(theme)
+  localStorage.setItem("pref-theme", theme);
+}
+
+const toggleThemeCallbacks = {}
+toggleThemeCallbacks['main'] = (isDark) => {
+  
+  if (isDark) {
+    setPrefTheme('light');
+  } else {
+    setPrefTheme('dark');
+  }
+}
+
+
+
+
+window.addEventListener('toggle-theme', function() {
+  
+  const isDark = isDarkTheme()
+  for (const key in toggleThemeCallbacks) {
+    toggleThemeCallbacks[key](isDark)
+  }
+});
+
+
+function toggleThemeListener() {
+  
+  window.dispatchEvent(new CustomEvent('toggle-theme'));
+}
+
+</script>
+<script>
+  
+  (function() {
+    const defaultTheme = 'light';
+    const prefTheme = getPrefTheme();
+    const theme = prefTheme ? prefTheme : defaultTheme;
+
+    switchTheme(theme);
+  })();
 </script>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://theboylzh.github.io/blog/" accesskey="h" title="去顽野 (Alt + H)">去顽野</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+            <a href="http://localhost:1313/blog/" accesskey="h" title="去顽野 (Alt + H)">去顽野</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -118,174 +172,160 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-            </div>
+            </span>
         </div>
         <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/blog/about/" title="About"
+                >About
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/posts/" title="Post"
+                >Post
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/tags/" title="Tags"
+                >Tags
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/search/" title="Search (Alt &#43; /)"data-no-instant accesskey=/
+                >Search
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<article class="first-entry home-info">
-    <header class="entry-header">
-        <h1>To be Wild，人生是旷野</h1>
-    </header>
-    <div class="entry-content">
-        5年高级产品设计师｜
-MoFlow产品负责人<!-- raw HTML omitted -->｜独立开发者
-    </div>
-    <footer class="entry-footer">
-        <div class="social-icons" >
-    <a href="https://x.com/shuxin_app" target="_blank" rel="noopener noreferrer me"
-        title="X">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-    <path
-        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
-    </path>
-</svg>
+<main class="main"><div class="profile">
+    <div class="profile_inner">
+        <img src="http://localhost:1313/blog/images/avatar-no-bg.png" alt="handsome boy"
+            height="294" width="320" />
+        <h1>To Be Wild</h1>
+        <span>产品设计师｜MoFlow产品负责人<!-- raw HTML omitted -->｜独立开发者</span><div class="social-icons">
+    <a href="https://github.com/theboylzh" target="_blank" rel="noopener noreferrer me" title="Github-Simple">
+        <svg role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+
     </a>
-    <a href="mailto:theboylzh@163.com" target="_blank" rel="noopener noreferrer me"
-        title="Email">
+    <a href="mailto:theboylzh@163.com" target="_blank" rel="noopener noreferrer me" title="Email">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2"
     stroke-linecap="round" stroke-linejoin="round">
     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
     <polyline points="22,6 12,13 2,6"></polyline>
 </svg>
+
     </a>
-    <a href="https://www.xiaohongshu.com/user/profile/65cc47e7000000000401c841" target="_blank" rel="noopener noreferrer me"
-        title="Rednote">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-    stroke-linecap="round" stroke-linejoin="round">
-    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-</svg>
+    <a href="https://www.xiaohongshu.com/user/profile/65cc47e7000000000401c841" target="_blank" rel="noopener noreferrer me" title="Xhs2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M22.405 9.879c.002.016.01.02.07.019h.725a.797.797 0 0 0 .78-.972.794.794 0 0 0-.884-.618.795.795 0 0 0-.692.794c0 .101-.002.666.001.777zm-11.509 4.808c-.203.001-1.353.004-1.685.003a2.528 2.528 0 0 1-.766-.126.025.025 0 0 0-.03.014L7.7 16.127a.025.025 0 0 0 .01.032c.111.06.336.124.495.124.66.01 1.32.002 1.981 0 .01 0 .02-.006.023-.015l.712-1.545a.025.025 0 0 0-.024-.036zM.477 9.91c-.071 0-.076.002-.076.01a.834.834 0 0 0-.01.08c-.027.397-.038.495-.234 3.06-.012.24-.034.389-.135.607-.026.057-.033.042.003.112.046.092.681 1.523.787 1.74.008.015.011.02.017.02.008 0 .033-.026.047-.044.147-.187.268-.391.371-.606.306-.635.44-1.325.486-1.706.014-.11.021-.22.03-.33l.204-2.616.022-.293c.003-.029 0-.033-.03-.034zm7.203 3.757a1.427 1.427 0 0 1-.135-.607c-.004-.084-.031-.39-.235-3.06a.443.443 0 0 0-.01-.082c-.004-.011-.052-.008-.076-.008h-1.48c-.03.001-.034.005-.03.034l.021.293c.076.982.153 1.964.233 2.946.05.4.186 1.085.487 1.706.103.215.223.419.37.606.015.018.037.051.048.049.02-.003.742-1.642.804-1.765.036-.07.03-.055.003-.112zm3.861-.913h-.872a.126.126 0 0 1-.116-.178l1.178-2.625a.025.025 0 0 0-.023-.035l-1.318-.003a.148.148 0 0 1-.135-.21l.876-1.954a.025.025 0 0 0-.023-.035h-1.56c-.01 0-.02.006-.024.015l-.926 2.068c-.085.169-.314.634-.399.938a.534.534 0 0 0-.02.191.46.46 0 0 0 .23.378.981.981 0 0 0 .46.119h.59c.041 0-.688 1.482-.834 1.972a.53.53 0 0 0-.023.172.465.465 0 0 0 .23.398c.15.092.342.12.475.12l1.66-.001c.01 0 .02-.006.023-.015l.575-1.28a.025.025 0 0 0-.024-.035zm-6.93-4.937H3.1a.032.032 0 0 0-.034.033c0 1.048-.01 2.795-.01 6.829 0 .288-.269.262-.28.262h-.74c-.04.001-.044.004-.04.047.001.037.465 1.064.555 1.263.01.02.03.033.051.033.157.003.767.009.938-.014.153-.02.3-.06.438-.132.3-.156.49-.419.595-.765.052-.172.075-.353.075-.533.002-2.33 0-4.66-.007-6.991a.032.032 0 0 0-.032-.032zm11.784 6.896c0-.014-.01-.021-.024-.022h-1.465c-.048-.001-.049-.002-.05-.049v-4.66c0-.072-.005-.07.07-.07h.863c.08 0 .075.004.075-.074V8.393c0-.082.006-.076-.08-.076h-3.5c-.064 0-.075-.006-.075.073v1.445c0 .083-.006.077.08.077h.854c.075 0 .07-.004.07.07v4.624c0 .095.008.084-.085.084-.37 0-1.11-.002-1.304 0-.048.001-.06.03-.06.03l-.697 1.519s-.014.025-.008.036c.006.01.013.008.058.008 1.748.003 3.495.002 5.243.002.03-.001.034-.006.035-.033v-1.539zm4.177-3.43c0 .013-.007.023-.02.024-.346.006-.692.004-1.037.004-.014-.002-.022-.01-.022-.024-.005-.434-.007-.869-.01-1.303 0-.072-.006-.071.07-.07l.733-.003c.041 0 .081.002.12.015.093.025.16.107.165.204.006.431.002 1.153.001 1.153zm2.67.244a1.953 1.953 0 0 0-.883-.222h-.18c-.04-.001-.04-.003-.042-.04V10.21c0-.132-.007-.263-.025-.394a1.823 1.823 0 0 0-.153-.53 1.533 1.533 0 0 0-.677-.71 2.167 2.167 0 0 0-1-.258c-.153-.003-.567 0-.72 0-.07 0-.068.004-.068-.065V7.76c0-.031-.01-.041-.046-.039H17.93s-.016 0-.023.007c-.006.006-.008.012-.008.023v.546c-.008.036-.057.015-.082.022h-.95c-.022.002-.028.008-.03.032v1.481c0 .09-.004.082.082.082h.913c.082 0 .072.128.072.128V11.19s.003.117-.06.117h-1.482c-.068 0-.06.082-.06.082v1.445s-.01.068.064.068h1.457c.082 0 .076-.006.076.079v3.225c0 .088-.007.081.082.081h1.43c.09 0 .082.007.082-.08v-3.27c0-.029.006-.035.033-.035l2.323-.003c.098 0 .191.02.28.061a.46.46 0 0 1 .274.407c.008.395.003.79.003 1.185 0 .259-.107.367-.33.367h-1.218c-.023.002-.029.008-.028.033.184.437.374.871.57 1.303a.045.045 0 0 0 .04.026c.17.005.34.002.51.003.15-.002.517.004.666-.01a2.03 2.03 0 0 0 .408-.075c.59-.18.975-.698.976-1.313v-1.981c0-.128-.01-.254-.034-.38 0 .078-.029-.641-.724-.998z"/></svg>
+
     </a>
 </div>
 
-    </footer>
-</article>
+        <div class="buttons">
+            <a class="button" href="/blog/posts/" rel="noopener" title="Post">
+                <span class="button-inner">Post</span>
+            </a>
+            <a class="button" href="/blog/tags/" rel="noopener" title="Tags">
+                <span class="button-inner">Tags</span>
+            </a>
+        </div>
+    </div>
+</div>
 
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">设计碎碎念
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>一、小的实践&amp;设计思维 以下是个人感想：
-不要抗拒那些理论上说不好的交互。很多东西亲自去尝试先，不要用思想实验去否认一些可能性。将理论生搬硬套地用于实践，其实也不太合理。
-以下是阅读所得：
-设计思维：作为一种思维方式，设计思维关注如何综合处理问题，强调深入理解问题产生的原因和背景，经由深刻洞察和理性分析，通过跨领域、跨界的协作，找出最恰当的解决方案。
-界面设计的评价体系应该如何构建?
-可用性 (usability) 和吸引人 (emotional aspect) 都是常用的，也很简单的设计原则。有用性这一块有大量的理论、工具、方法或技术支撑，Alan Cooper 的“About Face”(《交互设计精髓》)，Bill Buxton 的 “Sketching User Experiences”等著作都有大量介绍。
-设计工作中，很长时间没有新的 Idea 出现，工作时间又紧，有一些什么好的工作方法?
-设计的过程从定义问题开始，而每一个问题又都有很多不同角度、立场、维度和语境的解读；解决痛点是设计的机会，消除问题的源头是设计的机会，用户生活目标的重构也是设计机会；实体产品是解决很多问题的当然选择，交互、体验、服务 则为解决问题提供了另外的思路和途径;技术手段很重要，有时候情感支持也可能更有效；物质满足很现实，意义塑造也不可忽视。
-跳出当下的设计思路，从另一个角度、到设计过程的另 一个阶段、站在不同的立场、用不同的手段、不同的视觉语言， 新的 Idea 应该层出不穷。
-以上阅读所得来自《设计思维：理论与实践》第一期。
-二、与上级的博弈 上级的思考未必是有效的，这个也要考虑到上级的能力。在接到上级的指导、需求时，一定要问为什么，这必须成为根植于心的思维。因为设计的本质就是要解决问题。
-即使上级说的有道理，但也不要马上去答应，一定要去思考、反驳、质疑。可以延迟回复。
-在解决问题的时候，需要多方的信息来源，才能做出有效抉择和合适的方案，切忌只听一人指挥。
-三、产品感的培养 敏锐地自我察觉痛点，再将痛点使用「同理心地图」结构化，以此来培养自己找到需求的能力。
-四、向上沟通能力 主动地与 Leader 和 PM 去了解业务、方向、数据等方面的信息，切忌埋头苦干，什么都不关心。 经常性地对产品进行专业自查，找出产品体验上的不足 五、有些设计无法验证，也不需纠结 受限于公司业务的大小、资源、能力、时间、需求重要程度等现实条件，很多细节的设计，都不能得到验证（即使有数据）。因此在面对这些设计的时候，不要过于纠结、不必一定用验证的思维和期待来要求它。重要的是，做出来（任何方案都好），用设计方法（场景、目标）去完善。
-六、使用场景、主要目的很重要 接到一个需求，视频剪辑中，添加音乐的时候，要让用户自由地听某首音乐和选择开始时间。（刚睡醒脑子还懵逼，也没形成良好的思维来思考新功能）。一番纠结的讨论后，认为用户在添加音乐的时候，其实是在听感觉，而不是需要一个精确的控制音乐起止时间。
-虽然讨论结束，但给我的反思还是很大的。
-七、设计不只是看体验好不好 设计要考虑的东西有很多，除了体验本身，还有考虑业务、kpi 等等。这里不讨论设计的好坏，只是想记录下，在对比不同的设计时，不要只看体验。
-八、如何更快地过稿子 设计完之后，设计师容易在理解背景的情况下，对自己的设计方案深信不疑。这时候，为了检验自己的设计方案，需要我们站在陌生的第三视角去审视/使用自己的设计方案。
-清晰比视觉的优先级更高。 清晰意味着用户认知成本更低。 交互是否满足用户体验和商业利益 九、设计的批判性思维 设计师想要发挥更大的作用、产生价值，一定要具备批判性的思维。
-设计方案的优劣，要从多个角度去考虑。单一的思维和切入角度会限制我们对设计的深入。
-十、设计价值 设计的价值是什么？在工作了这么久之后，我认为，在商言商，那么设计的价值在于能否带来利益。有以下这么几点：
-是否能帮助盈利？ 是否能帮助节省成本？ 是否能形成设计行业影响力？ 但是，设计的上限是能看得到的。设计执行做到一定程度，便不再需要更高级了（类似正弦曲线，在产品后期，设计的带来的商业价值是难以提高了。那么，设计策略呢？这一定程度上，便让设计师不再是传统意义上的设计师，更像是一个做产品、运营的人，只不过他刚好从设计的角度来切入。
-十一、为什么总是精疲力尽，没有创意？ 想想自己是不是已经把自己当作流水线的工人，以为加班、努力就能出成绩？
-人的大脑并非是这样的工具，尤其在我们进行创造力工作的时候，不像工厂流水线工人那样多劳多得了。
-TED 有个演讲者 Rahaf Harfoush 就分享了他的经验。那就是找到促进你创造力的方式，而不是把自己当作一个机器。你所采用的“提高”的方法，也许正是扼杀你创造力的东西。
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-05-24 23:48:17 +0800 CST'>May 24, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to 设计碎碎念" href="https://theboylzh.github.io/blog/posts/design-think/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">My First Post
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Title I am happy to see you!
-Title2 No money no talk!
-</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-05-24 21:25:17 +0800 CST'>May 24, 2025</span></footer>
-  <a class="entry-link" aria-label="post link to My First Post" href="https://theboylzh.github.io/blog/posts/my-first-post/"></a>
-</article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://theboylzh.github.io/blog/">去顽野</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+  <span>&copy; 2025 <a href="http://localhost:1313/blog/">去顽野</a></span><span style="display: inline-block; margin-left: 1em;">
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
+  </span>
+  <span style="display: inline-block; margin-left: 1em;">
+    Powered by
+    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+    <a href="https://github.com/reorx/hugo-PaperModX/" rel="noopener" target="_blank">PaperModX</a>
+  </span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+    <path d="M12 6H0l6-6z" />
+  </svg>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
+  (function() {
+     
+    const disableThemeToggle = '' == '1';
+    if (disableThemeToggle) {
+      return;
     }
 
+    let button = document.getElementById("theme-toggle")
+    
+    button.removeEventListener('click', toggleThemeListener)
+    
+    button.addEventListener('click', toggleThemeListener)
+  })();
+</script>
+
+<script>
+  (function () {
+    let menu = document.getElementById('menu')
+    if (menu) {
+      menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+      menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+      }
+    }
+
+    const disableSmoothScroll = '' == '1';
+    const enableInstantClick = '' == '1';
+    
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || disableSmoothScroll || enableInstantClick) {
+      return;
+    }
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        var id = this.getAttribute("href").substr(1);
+        document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+          behavior: "smooth"
         });
+        if (id === "top") {
+          history.replaceState(null, null, " ");
+        } else {
+          history.pushState(null, null, `#${id}`);
+        }
+      });
     });
-
+  })();
 </script>
 <script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
+  var mybutton = document.getElementById("top-link");
+  window.onscroll = function () {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+      mybutton.style.visibility = "visible";
+      mybutton.style.opacity = "1";
+    } else {
+      mybutton.style.visibility = "hidden";
+      mybutton.style.opacity = "0";
+    }
+  };
 </script>
 <script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
+  if (window.scrollListeners) {
+    
+    for (const listener of scrollListeners) {
+      window.removeEventListener('scroll', listener)
+    }
+  }
+  window.scrollListeners = []
 </script>
+
+
+
+<script src="/blog/js/medium-zoom.min.js" data-no-instant
+></script>
 </body>
 
 </html>

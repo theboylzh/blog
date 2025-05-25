@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on 去顽野</title>
-    <link>http://localhost:1313/blog/posts/</link>
-    <description>Recent content in Posts on 去顽野</description>
+    <title>设计思维 on 去顽野</title>
+    <link>http://localhost:1313/blog/tags/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4/</link>
+    <description>Recent content in 设计思维 on 去顽野</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 May 2025 23:48:17 +0800</lastBuildDate><atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 May 2025 23:48:17 +0800</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>设计碎碎念</title>
       <link>http://localhost:1313/blog/posts/design-think/</link>
@@ -118,23 +118,6 @@
 <h2 id="十二把自己放置在创业者的角度去全盘考虑">十二、把自己放置在创业者的角度去全盘考虑</h2>
 <p>这一点不能做强求，根据自己的职业方向不同而有所不同。对于我来说，我希望在交互、产品、数据上做更多的工作，因此我需要在公司里，站到那个位置去考虑，对接和说服不同的人员、考虑版本问题、考虑前后端交互机制、制定更优的设计方案，协调和管理工作，而不只是埋头苦干。</p>
 <p>但是也要明白，你不要越级去做事情，这样会引起上位者的不悦，重要的是如何偷到他们好的地方，而不是明目张胆地造成威胁。</p>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/blog/posts/my-first-post/</link>
-      <pubDate>Sat, 24 May 2025 21:25:17 +0800</pubDate>
-      
-      <guid>http://localhost:1313/blog/posts/my-first-post/</guid>
-      <description>&lt;h1 id=&#34;title&#34;&gt;Title&lt;/h1&gt;
-&lt;p&gt;I am happy to see you!&lt;/p&gt;
-&lt;h2 id=&#34;title2&#34;&gt;Title2&lt;/h2&gt;
-&lt;p&gt;No money no talk!&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h1 id="title">Title</h1>
-<p>I am happy to see you!</p>
-<h2 id="title2">Title2</h2>
-<p>No money no talk!</p>
 ]]></content:encoded>
     </item>
     
