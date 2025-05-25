@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on 去顽野</title>
-    <link>http://localhost:1313/blog/tags/</link>
+    <link>https://theboylzh.github.io/blog/tags/</link>
     <description>Recent content in Tags on 去顽野</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 May 2025 23:48:17 +0800</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 May 2025 23:48:17 +0800</lastBuildDate><atom:link href="https://theboylzh.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>体验设计</title>
-      <link>http://localhost:1313/blog/tags/%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1/</link>
+      <link>https://theboylzh.github.io/blog/tags/%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1/</link>
       <pubDate>Sat, 24 May 2025 23:48:17 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/tags/%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1/</guid>
+      <guid>https://theboylzh.github.io/blog/tags/%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>设计思维</title>
-      <link>http://localhost:1313/blog/tags/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4/</link>
+      <link>https://theboylzh.github.io/blog/tags/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4/</link>
       <pubDate>Sat, 24 May 2025 23:48:17 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/tags/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4/</guid>
+      <guid>https://theboylzh.github.io/blog/tags/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>

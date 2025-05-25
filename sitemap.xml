@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://theboylzh.github.io/blog/</loc>
     <lastmod>2025-05-24T23:52:17+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/search/</loc>
+    <loc>https://theboylzh.github.io/blog/search/</loc>
     <lastmod>2025-05-24T23:52:17+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/</loc>
+    <loc>https://theboylzh.github.io/blog/posts/</loc>
     <lastmod>2025-05-24T23:48:17+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/</loc>
+    <loc>https://theboylzh.github.io/blog/tags/</loc>
     <lastmod>2025-05-24T23:48:17+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1/</loc>
+    <loc>https://theboylzh.github.io/blog/tags/%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2025-05-24T23:48:17+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4/</loc>
+    <loc>https://theboylzh.github.io/blog/tags/%E8%AE%BE%E8%AE%A1%E6%80%9D%E7%BB%B4/</loc>
     <lastmod>2025-05-24T23:48:17+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/design-think/</loc>
+    <loc>https://theboylzh.github.io/blog/posts/design-think/</loc>
     <lastmod>2025-05-24T23:48:17+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/my-first-post/</loc>
+    <loc>https://theboylzh.github.io/blog/posts/my-first-post/</loc>
     <lastmod>2025-05-24T21:25:17+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/</loc>
+    <loc>https://theboylzh.github.io/blog/categories/</loc>
   </url>
 </urlset>

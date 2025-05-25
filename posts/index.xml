@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on 去顽野</title>
-    <link>http://localhost:1313/blog/posts/</link>
+    <link>https://theboylzh.github.io/blog/posts/</link>
     <description>Recent content in Posts on 去顽野</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 May 2025 23:48:17 +0800</lastBuildDate><atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 May 2025 23:48:17 +0800</lastBuildDate><atom:link href="https://theboylzh.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>设计碎碎念</title>
-      <link>http://localhost:1313/blog/posts/design-think/</link>
+      <link>https://theboylzh.github.io/blog/posts/design-think/</link>
       <pubDate>Sat, 24 May 2025 23:48:17 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/posts/design-think/</guid>
+      <guid>https://theboylzh.github.io/blog/posts/design-think/</guid>
       <description>&lt;h2 id=&#34;一小的实践设计思维&#34;&gt;一、小的实践&amp;amp;设计思维&lt;/h2&gt;
 &lt;p&gt;以下是个人感想：&lt;/p&gt;
 &lt;p&gt;不要抗拒那些理论上说不好的交互。很多东西亲自去尝试先，不要用思想实验去否认一些可能性。将理论生搬硬套地用于实践，其实也不太合理。&lt;/p&gt;
@@ -123,10 +123,10 @@
     
     <item>
       <title>My First Post</title>
-      <link>http://localhost:1313/blog/posts/my-first-post/</link>
+      <link>https://theboylzh.github.io/blog/posts/my-first-post/</link>
       <pubDate>Sat, 24 May 2025 21:25:17 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/posts/my-first-post/</guid>
+      <guid>https://theboylzh.github.io/blog/posts/my-first-post/</guid>
       <description>&lt;h1 id=&#34;title&#34;&gt;Title&lt;/h1&gt;
 &lt;p&gt;I am happy to see you!&lt;/p&gt;
 &lt;h2 id=&#34;title2&#34;&gt;Title2&lt;/h2&gt;
