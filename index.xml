@@ -2,27 +2,499 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>去顽野</title>
-    <link>https://theboylzh.github.io/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content on 去顽野</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 May 2025 23:52:17 +0800</lastBuildDate><atom:link href="https://theboylzh.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 May 2025 17:32:58 +0800</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>暗黑模式？So Easy！</title>
+      <link>http://localhost:1313/blog/posts/dark-mode/</link>
+      <pubDate>Mon, 26 May 2025 17:32:58 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/posts/dark-mode/</guid>
+      <description>&lt;h1 id=&#34;一暗黑模式的前世今生&#34;&gt;一、暗黑模式的前世今生&lt;/h1&gt;
+&lt;h2 id=&#34;什么是暗黑模式&#34;&gt;什么是暗黑模式&lt;/h2&gt;
+&lt;p&gt;暗黑模式是指软件的深色界面。这里需要注意，暗黑模式和护眼模式是两种概念。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;暗黑模式还要关注在强光下的视觉识别度&lt;/li&gt;
+&lt;li&gt;护眼模式主要用于暗光环境，注重阅读舒适性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由于网上的资料众多，这里就不展开讲了。概念不是重点。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgse.com/i/pVScujI&#34;&gt;
+  &lt;img loading=&#34;lazy&#34; src=&#34;https://s21.ax1x.com/2025/05/26/pVScujI.png&#34; alt=&#34;dark cover&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;暗黑模式要注意什么&#34;&gt;暗黑模式要注意什么&lt;/h2&gt;
+&lt;p&gt;正如上文所说，暗黑模式的使用场景和亮色模式差不多一致。因此保证视觉识别度是很重要的事情。这里有几点需要注意：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;减轻眼睛压力。避免大面积使用纯黑和纯白，这样对比度过高，使用久了会刺眼&lt;/li&gt;
+&lt;li&gt;注重可读性。重要的文字和元素需要满足无障碍标准中的 AA 级别；视觉层次要有区分&lt;/li&gt;
+&lt;li&gt;营造高端感。这也是暗黑模式带来的一种常见的感觉&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;工具&#34;&gt;工具&lt;/h2&gt;
+&lt;p&gt;分享几个可以使用到的工具：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://webaim.org/resources/contrastchecker/&#34;&gt;WebAIM&lt;/a&gt; - 颜色对比度检测&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;涉及知识&#34;&gt;涉及知识&lt;/h2&gt;
+&lt;h3 id=&#34;wcag20-标准&#34;&gt;WCAG2.0 标准&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;常规文字至少满足 AA 级标准，最低对比度为：4.5:1&lt;/li&gt;
+&lt;li&gt;大本文的对比度至少满足 3:1&lt;/li&gt;
+&lt;li&gt;图标和组件至少满足 AA 级标准，最低对比度为 3:1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;亮度和对比度计算公式&#34;&gt;亮度和对比度计算公式&lt;/h3&gt;
+&lt;p&gt;颜色对比度计算：对比度 = (L1 + 0.05) / (L2 + 0.05)&lt;/p&gt;
+&lt;p&gt;相对亮度计算：L = 0.2126 * R&amp;rsquo; + 0.7152 * G&amp;rsquo; + 0.0722 * B’&lt;/p&gt;
+&lt;p&gt;相对亮度是这样计算的：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;计算 sRGB&lt;/strong&gt;。对于每个 RGB（红绿蓝）值（取值范围在0-255之间），首先将其转换为标准的RGB值（sRGB），即除以255。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;对 sRGB 值进行伽玛校正&lt;/strong&gt;。即如果值小于或等于 0.03928，则将其除以 12.92；如果值大于 0.03928，则将其加上 0.055，然后除以 1.055，并且将得到的结果乘以自身（即乘方）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;计算相对亮度&lt;/strong&gt; L = 0.2126 * R&amp;rsquo; + 0.7152 * G&amp;rsquo; + 0.0722 * B&amp;rsquo;，这里的 R&amp;rsquo;、G&amp;rsquo;和B&amp;rsquo; 是伽玛校正后的 sRGB 值。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果你要单独计算相对亮度，建议使用任意一个 LLM 大模型来帮助你。&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="一暗黑模式的前世今生">一、暗黑模式的前世今生</h1>
+<h2 id="什么是暗黑模式">什么是暗黑模式</h2>
+<p>暗黑模式是指软件的深色界面。这里需要注意，暗黑模式和护眼模式是两种概念。</p>
+<ul>
+<li>暗黑模式还要关注在强光下的视觉识别度</li>
+<li>护眼模式主要用于暗光环境，注重阅读舒适性</li>
+</ul>
+<p>由于网上的资料众多，这里就不展开讲了。概念不是重点。</p>
+<p><a href="https://imgse.com/i/pVScujI">
+  <img loading="lazy" src="https://s21.ax1x.com/2025/05/26/pVScujI.png" alt="dark cover"  /></a></p>
+<h2 id="暗黑模式要注意什么">暗黑模式要注意什么</h2>
+<p>正如上文所说，暗黑模式的使用场景和亮色模式差不多一致。因此保证视觉识别度是很重要的事情。这里有几点需要注意：</p>
+<ul>
+<li>减轻眼睛压力。避免大面积使用纯黑和纯白，这样对比度过高，使用久了会刺眼</li>
+<li>注重可读性。重要的文字和元素需要满足无障碍标准中的 AA 级别；视觉层次要有区分</li>
+<li>营造高端感。这也是暗黑模式带来的一种常见的感觉</li>
+</ul>
+<h2 id="工具">工具</h2>
+<p>分享几个可以使用到的工具：</p>
+<ul>
+<li><a href="https://webaim.org/resources/contrastchecker/">WebAIM</a> - 颜色对比度检测</li>
+</ul>
+<h2 id="涉及知识">涉及知识</h2>
+<h3 id="wcag20-标准">WCAG2.0 标准</h3>
+<ul>
+<li>常规文字至少满足 AA 级标准，最低对比度为：4.5:1</li>
+<li>大本文的对比度至少满足 3:1</li>
+<li>图标和组件至少满足 AA 级标准，最低对比度为 3:1</li>
+</ul>
+<h3 id="亮度和对比度计算公式">亮度和对比度计算公式</h3>
+<p>颜色对比度计算：对比度 = (L1 + 0.05) / (L2 + 0.05)</p>
+<p>相对亮度计算：L = 0.2126 * R&rsquo; + 0.7152 * G&rsquo; + 0.0722 * B’</p>
+<p>相对亮度是这样计算的：</p>
+<ol>
+<li><strong>计算 sRGB</strong>。对于每个 RGB（红绿蓝）值（取值范围在0-255之间），首先将其转换为标准的RGB值（sRGB），即除以255。</li>
+<li><strong>对 sRGB 值进行伽玛校正</strong>。即如果值小于或等于 0.03928，则将其除以 12.92；如果值大于 0.03928，则将其加上 0.055，然后除以 1.055，并且将得到的结果乘以自身（即乘方）。</li>
+<li><strong>计算相对亮度</strong> L = 0.2126 * R&rsquo; + 0.7152 * G&rsquo; + 0.0722 * B&rsquo;，这里的 R&rsquo;、G&rsquo;和B&rsquo; 是伽玛校正后的 sRGB 值。</li>
+</ol>
+<p>如果你要单独计算相对亮度，建议使用任意一个 LLM 大模型来帮助你。</p>
+<h1 id="二快速构建属于你的暗黑模式">二、快速构建属于你的暗黑模式</h1>
+<h2 id="颜色语义化">颜色语义化</h2>
+<p>这是前提。颜色语义化可以有很多表现形式：</p>
+<ul>
+<li>建立颜色样式，应用在任意元素上</li>
+<li>建立 Design Token，应用在任意元素上</li>
+</ul>
+<p>上面两点都需要和开发配合联动，但是 Design Token 的工程量更大。</p>
+<p>一般来说，颜色语义化需要包括：</p>
+<ul>
+<li>通过颜色类型（背景、文本、图标、边框）和颜色角色（品牌、成功、危险、警告）来组织颜色</li>
+<li>引入了显著性（主要、次要、第三级）和交互模式（默认、悬停等状态）</li>
+</ul>
+<p>在实际应用中，可能不需要用到这么复杂也能完成设计需要。比如在我负责的项目里，颜色样式设置成了下面这些：</p>
+<ul>
+<li>中性色：背景、上层背景、一级色、二级色、三级色、四级色、按钮底色等等</li>
+<li>彩色：主题色、错误色、链接色等等</li>
+</ul>
+<hr>
+<p>❓ <strong>这时候可能有人会说，不应该先建立一套完整的颜色体系吗？</strong></p>
+<p>是的，这个问题很好。但是现实不一定能给你足够的时间和空间来操作。作者所在的项目便是这样，缺乏一套颜色体系，但是好在有足够多的样式被应用到界面中。所以如果可以的话，还是推荐建立项目的颜色体系，更好的是使用 Design Token！</p>
+<p>❓ <strong>说了那么多，怎么快速建立暗黑模式呢？</strong></p>
+<p>不废话，简单来说就是构建好常用中性色和彩色即可！（甚至彩色也不用过度考虑）</p>
+<h2 id="中性色">中性色</h2>
+<p>中性色的调整其实不像想象中那么简单，在这里，需要满足这些目标：</p>
+<ul>
+<li>足够的识别度</li>
+<li>营造高端感</li>
+</ul>
+<p>接下来将会告诉你怎么去达到这两个目标。首先，我们先将软件的颜色进行分类。一般来说中性色涉及：背景、文字、图标、边框。这个按需进行分类即可。将颜色分类好之后，我们下一步的行动才会清晰。</p>
+<h3 id="定调营造高端感">定调：营造高端感</h3>
+<p>背景色使用接近黑色单不是纯黑，甚至带有色调的黑色，这样可以加深视觉深度和质感。在暗色模式下，可以选择偏向深蓝或者深紫色。</p>
+<p>比如，在我负责的项目中。主要的背景分为底层页面背景和上层背景色。这两个颜色的设置分别如下。</p>
+<p><a href="https://imgse.com/i/pVSce9H">
+  <img loading="lazy" src="https://s21.ax1x.com/2025/05/26/pVSce9H.png" alt="dark png"  /></a></p>
+<p>这里需要注意的是：</p>
+<ul>
+<li>多个背景色的色系需要一致</li>
+<li>亮度提高，饱和度需要稍微降低</li>
+<li>避免使用阴影来区分层级高度，建议使用不同的明度来区分</li>
+</ul>
+<h3 id="文字足够的识别度">文字：足够的识别度</h3>
+<p>根据 WCAG2.0 的规范要求，文字和背景的对比度至少要达到 AA 级别，也就是 4.5:1 的对比度。iOS 甚至是要求最低达到 7:1。在我负责的项目里，由于图标、边框和组件都是相对次要的，因此不被包含在考虑中。在实际开发中，根据项目对设计的精细度要求来规划具体哪些颜色需要符合标准即可。</p>
+<p>基本上，我只需要调整好文字的颜色就能够把暗黑模式基本定稿了。那么，文字颜色具体是怎么调整出来的呢？这里又涉及到几个关键点：</p>
+<ul>
+<li>文字的亮度梯度如何界定？</li>
+<li>文字全部都要满足 WCAG2.0 标准吗？</li>
+<li>文字用纯色吗？</li>
+</ul>
+<p>带着这些疑问，我对Material Design、Apple 和 Ant Design 这几个大的设计系统做了调研。</p>
+<p><a href="https://imgse.com/i/pVScngA">
+  <img loading="lazy" src="https://s21.ax1x.com/2025/05/26/pVScngA.png" alt="pVScngA.png"  /></a></p>
+<p>基于这个调研我们可以看到：</p>
+<ul>
+<li>文字一级和二级色必须要满足 WCAG2.0 的标准</li>
+<li>文字一级和二级的亮度梯度较大，二级和三级、三级和四级的变化较小</li>
+</ul>
+<hr>
+<p>❓ <strong>Q：为什么文字仅一级和二级色满足 WCAG2.0 标准，三级和四级难道不重要吗？</strong></p>
+<p>A：没错，一级和二级通常用于界面中比较重要的文字，三级和四级色通常用于不重要的说明和禁用状态。因此，保证一级和二级达到 AA 标准是必须的。又因为需要和二级色拉开亮度差异，因此三级和四级色就不能保证达到可读性的标准了。</p>
+<p>❓ <strong>Q：文字只能用纯色吗？</strong></p>
+<p>A：根据观察，苹果用了蓝色，有些平台则选择偏黄一些。在这一点上值得探究，当背景色作为冷色存在时，文字有多选择：</p>
+<ul>
+<li>和背景同系色</li>
+<li>和主题色同系色</li>
+<li>偏橙黄，减少在冷色背景下长时间阅读造成的眼睛疲劳</li>
+</ul>
+<p>这里就看你是怎么考虑的了。</p>
+<h2 id="彩色和功能色">彩色和功能色</h2>
+<p>在调整彩色的时候，只需要遵循以下要求即可：</p>
+<ul>
+<li>主色调需要降低饱和度，适当提高亮度（这是因为高饱和的颜色在深色背景下会看起来饱和度更高，也就是霓虹灯效应。这样会降低可读性）</li>
+<li>用色节制，不要大面积的使用明亮的颜色</li>
+</ul>
+<p><a href="https://imgse.com/i/pVScm3d">
+  <img loading="lazy" src="https://s21.ax1x.com/2025/05/26/pVScm3d.png" alt="pVScm3d.png"  /></a></p>
+<p>最后，简单回顾一下大致的流程：</p>
+<ul>
+<li>定调：确定背景色</li>
+<li>可读性：确定文字色</li>
+<li>微调：调整彩色</li>
+</ul>
+<p>你看，暗黑模式也没有那么难吧。</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Hugo &#43; GitHub，快速搭建个人博客</title>
+      <link>http://localhost:1313/blog/posts/hugo-practice/</link>
+      <pubDate>Mon, 26 May 2025 14:19:33 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/posts/hugo-practice/</guid>
+      <description>&lt;h1 id=&#34;一github-准备工作&#34;&gt;一、GitHub 准备工作&lt;/h1&gt;
+&lt;p&gt;本文默认已经安装好 Git、Homebrew 等多种配置。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;创建仓库，很简单，不说了&lt;/li&gt;
+&lt;li&gt;开启 GitHub Pages，也不说了&lt;/li&gt;
+&lt;li&gt;建立与 GitHub 的 SSH 连接&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;建立-ssh-连接&#34;&gt;建立 SSH 连接&lt;/h2&gt;
+&lt;p&gt;在本地终端输入，创建私钥。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 创建私钥，邮箱换成你自己的 Github 注册邮箱
+ssh-keygen -t ed25519 -C &amp;#34;xxxx@163.com&amp;#34;   
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这时候使用命令可以查看已创建的密钥。密钥的结构类似 &lt;code&gt;id_ed25519.pub&lt;/code&gt;。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 查看已创建的密钥
+ls -al ~/.ssh  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;复制公钥，本地终端输入代码，回车后默认复制到剪切板（公钥记得替换成自己的）。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 复制公钥
+pbcopy &amp;lt; ~/.ssh/id_ed25519.pub
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;粘贴到 Github：在 Github&amp;ndash;Settings&amp;ndash;SSH and GPG Keys中，点击「Add SSH Key」，粘贴即可添加成功。&lt;/p&gt;
+&lt;h1 id=&#34;二hugo-安装极速启动&#34;&gt;二、Hugo 安装+极速启动&lt;/h1&gt;
+&lt;h2 id=&#34;安装-hugo&#34;&gt;安装 Hugo&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install hugo
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;新建项目&#34;&gt;新建项目&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo new site blog
+
+# 返回信息
+Congratulations! Your new Hugo site was created in /Users/lzh/blog.
+
+Just a few more steps...
+
+
+1. Change the current directory to /Users/lzh/blog.
+
+2. Create or install a theme:
+
+   - Create a new theme with the command &amp;#34;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;#34;
+
+   - Or, install a theme from https://themes.gohugo.io/
+
+3. Edit hugo.toml, setting the &amp;#34;theme&amp;#34; property to the theme name.
+
+4. Create new content with the command &amp;#34;hugo new content &amp;lt;SECTIONNAME&amp;gt;/&amp;lt;FILENAME&amp;gt;.&amp;lt;FORMAT&amp;gt;&amp;#34;.
+
+5. Start the embedded web server with the command &amp;#34;hugo server --buildDrafts&amp;#34;.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这里信息如下：&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="一github-准备工作">一、GitHub 准备工作</h1>
+<p>本文默认已经安装好 Git、Homebrew 等多种配置。</p>
+<ol>
+<li>创建仓库，很简单，不说了</li>
+<li>开启 GitHub Pages，也不说了</li>
+<li>建立与 GitHub 的 SSH 连接</li>
+</ol>
+<h2 id="建立-ssh-连接">建立 SSH 连接</h2>
+<p>在本地终端输入，创建私钥。</p>
+<pre tabindex="0"><code># 创建私钥，邮箱换成你自己的 Github 注册邮箱
+ssh-keygen -t ed25519 -C &#34;xxxx@163.com&#34;   
+</code></pre><p>这时候使用命令可以查看已创建的密钥。密钥的结构类似 <code>id_ed25519.pub</code>。</p>
+<pre tabindex="0"><code># 查看已创建的密钥
+ls -al ~/.ssh  
+</code></pre><p>复制公钥，本地终端输入代码，回车后默认复制到剪切板（公钥记得替换成自己的）。</p>
+<pre tabindex="0"><code># 复制公钥
+pbcopy &lt; ~/.ssh/id_ed25519.pub
+</code></pre><p>粘贴到 Github：在 Github&ndash;Settings&ndash;SSH and GPG Keys中，点击「Add SSH Key」，粘贴即可添加成功。</p>
+<h1 id="二hugo-安装极速启动">二、Hugo 安装+极速启动</h1>
+<h2 id="安装-hugo">安装 Hugo</h2>
+<pre tabindex="0"><code>brew install hugo
+</code></pre><h2 id="新建项目">新建项目</h2>
+<pre tabindex="0"><code>hugo new site blog
+
+# 返回信息
+Congratulations! Your new Hugo site was created in /Users/lzh/blog.
+
+Just a few more steps...
+
+
+1. Change the current directory to /Users/lzh/blog.
+
+2. Create or install a theme:
+
+   - Create a new theme with the command &#34;hugo new theme &lt;THEMENAME&gt;&#34;
+
+   - Or, install a theme from https://themes.gohugo.io/
+
+3. Edit hugo.toml, setting the &#34;theme&#34; property to the theme name.
+
+4. Create new content with the command &#34;hugo new content &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.&lt;FORMAT&gt;&#34;.
+
+5. Start the embedded web server with the command &#34;hugo server --buildDrafts&#34;.
+</code></pre><p>这里信息如下：</p>
+<ol>
+<li>
+<p>将当前目录切换到 <code>/Users/lzh/blog</code>。</p>
+</li>
+<li>
+<p>创建或安装一个主题：</p>
+<ul>
+<li>使用 <code>hugo new theme &lt;THEMENAME&gt;</code> 创建一个新主题</li>
+<li>或者，从 <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a> 安装一个主题。</li>
+</ul>
+</li>
+<li>
+<p>编辑 <code>hugo.toml</code>，将“theme”属性设置为主题名称。</p>
+</li>
+<li>
+<p>使用命令<code>hugo new content &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.&lt;FORMAT&gt;</code>创建新内容。</p>
+</li>
+<li>
+<p>使用命令<code>hugo server --buildDrafts</code>启动内置的Web服务器。</p>
+</li>
+</ol>
+<h2 id="安装主题">安装主题</h2>
+<p>这一步很简单：</p>
+<ol>
+<li>在模版官网下载即可</li>
+<li>把文件放到项目根目录的 themes 文件夹内</li>
+<li>打开 hugo.toml，新增</li>
+</ol>
+<pre tabindex="0"><code>theme = &lt;Theme Name&gt;
+</code></pre><h2 id="创建新的内容">创建新的内容</h2>
+<p>尝试在 post 分类里创建一个叫 my-first-post.md 的文件。</p>
+<pre tabindex="0"><code>hugo new content/posts/my-first-post.md
+</code></pre><h2 id="启动本地网页">启动本地网页</h2>
+<pre tabindex="0"><code>hugo server --buildDrafts
+</code></pre><h2 id="补充主题和网址信息">补充主题和网址信息</h2>
+<pre tabindex="0"><code>hugo --theme=PaperMod --baseURL &#34;https://theboylzh.github.io/blog&#34;
+</code></pre><h1 id="三部署到-github">三、部署到 GitHub</h1>
+<h2 id="如何部署">如何部署</h2>
+<p>注意！在创建的 blog 目录中，<strong>cd 进入 public 文件夹</strong>。</p>
+<pre tabindex="0"><code># 初始化git
+git init
+
+# 添加全新远程
+git remote add origin git@github.com:theboylzh/blog.git
+
+# 拉取仓库
+git pull
+
+# 为本地main设置上游分支，推送代码上去后再执行
+git branch --set-upstream-to=origin/main main
+</code></pre><p>注意，先拉数据再推送。不然会出问题。</p>
+<pre tabindex="0"><code>git add .
+git commit -m &#34;初始提交&#34;
+git push -f origin main 
+</code></pre><h2 id="问题404">问题：404</h2>
+<p>将整个目录 push 了，其实只要将 public 推到 GitHub 即可。FUCK！！！</p>
+<h1 id="四其他功能">四、其他功能</h1>
+<h2 id="参考文章">参考文章</h2>
+<p>超级详细的搭建教程《<a href="https://jianzhnie.github.io/post/hugo_site/">Hugo + Github Pages 搭建个人博客</a>》</p>
+<h2 id="添加搜索">添加搜索</h2>
+<ol>
+<li>在 <code>content</code> 目录新建一个 <code>search.md</code></li>
+<li>在 <code>search.md</code> 头部信息中改成如下（<code>title</code>、<code>placeholder</code> 可以随便改）</li>
+</ol>
+<pre tabindex="0"><code>+++
+
+date = &#39;2025-05-24T23:52:17+08:00&#39;
+
+draft = false
+
+title = &#39;想找点特别的？&#39;
+
+layout = &#39;search&#39;
+
+summary = &#39;search&#39;
+
+placeholder = &#39;输入关键词&#39;
+
++++
+</code></pre><p>在 <code>hugo.toml</code> 中，添加下面代码，其中 <code>name</code> 可以修改。</p>
+<pre tabindex="0"><code>[outputs]
+home = [ &#34;HTML&#34;, &#34;RSS&#34;, &#34;JSON&#34; ]
+
+[[menu.main]]
+name = &#34;Search&#34;
+url = &#34;search/&#34;
+weight = 10
+
+[params.fuseOpts]
+isCaseSensitive = false
+includeMatches = true
+shouldSort = true
+location = 0
+distance = 1_000
+threshold = 0.4
+minMatchCharLength = 0
+keys = [ &#34;title&#34;, &#34;permalink&#34;, &#34;summary&#34;, &#34;content&#34; ]
+</code></pre><p>实测运行效果良好。</p>
+<h2 id="添加about页面">添加About页面</h2>
+<p>思路如下：</p>
+<ol>
+<li>创建一个菜单，以及一个 About 页面</li>
+<li>把该页面的渲染方式改成单独渲染，而非文章列表</li>
+</ol>
+<p>操作步骤：</p>
+<ol>
+<li><strong>切换到站点目录并创建页面</strong></li>
+</ol>
+<pre tabindex="0"><code>hugo new content/about/index.md
+</code></pre><ol start="2">
+<li><strong>编辑创建的页面</strong>：打开你创建的页面。删除页面前言中的 <code>draft: true</code> 条目，并在日期条目下方粘贴以下代码</li>
+</ol>
+<pre tabindex="0"><code>url = &#39;about&#39;
+[_build]
+  list = &#39;never&#39;
+</code></pre><ul>
+<li>所以，你的页面现在应该看起来像这样（去掉 Draft 和 Date）：</li>
+</ul>
+<pre tabindex="0"><code>---
+title = &#39;About&#39;
+url = &#39;about&#39;
+[_build]
+list = &#39;never&#39;
+---
+your content here
+(I recommend deleting the date too).
+</code></pre><ol start="2">
+<li><strong>配置菜单</strong>：在 <code>hugo.toml</code> 文件中配置菜单</li>
+</ol>
+<pre tabindex="0"><code>[menu]
+     [[menu.main]]
+        name = &#34;About&#34;
+        pageRef = &#34;/about&#34;
+        weight = 10
+</code></pre><ol start="3">
+<li><strong>运行 Hugo 服务器并查看页面</strong>：运行以下命令启动 Hugo 服务器</li>
+</ol>
+<pre tabindex="0"><code># 构建网站
+hugo
+
+# 启动服务
+hugo server
+</code></pre><p>然后打开页面。链接应该可以按预期工作。</p>
+<h2 id="添加顶部菜单">添加顶部菜单</h2>
+<p>👉 细节可以查看<a href="https://gohugo.io/configuration/menus/">官方教程文章</a>，挺复杂的，强烈建议问 GPT。</p>
+<p>这里要注意，如果上文已经添加了 About，要在代码上适当兼容一下，不要重复了。</p>
+<p>导航栏菜单有很多复杂的玩法，包括顶部、底部、侧边、子菜单、图标等等。这里只实践最简单的做法，就是点击某个菜单，进入到一个文章列表这样的情况。</p>
+<p>我希望有一个 Post 菜单，点击后，自动展示 <code>content/posts</code> 目录下的文件。</p>
+<p>在 <code>hugo.toml</code> 中添加</p>
+<pre tabindex="0"><code>[[menu.main]]
+name = &#34;Post&#34;
+url = &#34;/posts/&#34;
+weight = 10
+</code></pre><p>如果你有多个菜单，那可以这么写：</p>
+<pre tabindex="0"><code>[menu]
+ [[menu.main]]
+    name = &#34;About&#34;
+    pageRef = &#34;/about&#34;
+    weight = 10
+
+ [[menu.main]]
+    name = &#34;Search&#34;
+    url = &#34;search/&#34;
+    weight = 10
+
+ [[menu.main]]
+    name = &#34;Post&#34;
+    weight = 10
+    url = &#34;/posts/&#34;
+</code></pre><h2 id="添加分类-tags">添加分类 tags</h2>
+<p>hugo 支持 <code>categories</code> 和 <code>tags</code>。但我们为了简化，只使用其中一种就好了。</p>
+<h3 id="在文章中添加标签">在文章中添加标签</h3>
+<pre tabindex="0"><code>tags = [ &#34;体验设计&#34;, &#34;设计思维&#34; ]
+</code></pre><h3 id="在配置文件中增加菜单">在配置文件中增加菜单</h3>
+<pre tabindex="0"><code>
+ [[menu.main]]
+    name = &#34;Tags&#34;
+    url = &#34;/tags/&#34;
+    weight = 3
+</code></pre><h2 id="修改社交媒体图标">修改社交媒体图标</h2>
+<p>由于换了 PaperModX 主题，方式有点不一样。</p>
+<p>在配置文件中，</p>
+<pre tabindex="0"><code>[[params.socialIcons]]
+name = &#34;github-simple&#34;
+url = &#34;https://github.com/theboylzh&#34;
+
+[[params.socialIcons]]
+name = &#34;email&#34;
+url = &#34;mailto:theboylzh@163.com&#34;
+
+[[params.socialIcons]]
+name = &#34;xhs2&#34;
+url = &#34;https://www.xiaohongshu.com/user/profile/65cc47e7000000000401c841&#34;
+</code></pre><p>只要换上对应的 name 即可显示图标，可用的图标在<code>data/svg.toml</code>，也可以参考这个<a href="https://reorx.github.io/hugo-PaperModX/docs/icons_preview/">网页</a>。但如果内置的没有呢？我们可以去 <a href="https://simpleicons.org/?q=xiao">simple icon</a>，复制其中的 svg 代码到 svg.toml 文件中。</p>
+<p>先把 <code>svg.toml</code> 中的代码片段复制一份，替换其中的名字、path 就可以，不然很容易格式报错。</p>
+<h2 id="profile-mode-中修改头像">Profile Mode 中修改头像</h2>
+<ol>
+<li>在 static 目录新建 <code>images</code> 文件夹，加入图片，如 <code>avatar.png</code>。</li>
+<li>在配置中写入<code> imageUrl = &quot;images/avatar-no-bg.png&quot;</code></li>
+<li>使用 hugo 命令构建，可在 <code>public</code> 文件内查看图片资源在哪</li>
+</ol>
+<h2 id="构建注意事项">构建注意事项</h2>
+<p>在切换了新的主题后，使用 hugo 命令最好用 <code>--baseURL &quot;&lt;https://&lt;username&gt;.github.io/&lt;repo name&gt;&gt;&quot;</code>。例如：</p>
+<pre tabindex="0"><code>hugo --baseURL &#34;https://theboylzh.github.io/blog/&#34;
+</code></pre><p>这样部署后的网页才能正确引用地址，否则会出错。</p>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>设计碎碎念</title>
-      <link>https://theboylzh.github.io/blog/posts/design-think/</link>
+      <link>http://localhost:1313/blog/posts/design-think/</link>
       <pubDate>Sat, 24 May 2025 23:48:17 +0800</pubDate>
       
-      <guid>https://theboylzh.github.io/blog/posts/design-think/</guid>
+      <guid>http://localhost:1313/blog/posts/design-think/</guid>
       <description>&lt;h2 id=&#34;一小的实践设计思维&#34;&gt;一、小的实践&amp;amp;设计思维&lt;/h2&gt;
 &lt;p&gt;以下是个人感想：&lt;/p&gt;
 &lt;p&gt;不要抗拒那些理论上说不好的交互。很多东西亲自去尝试先，不要用思想实验去否认一些可能性。将理论生搬硬套地用于实践，其实也不太合理。&lt;/p&gt;
 &lt;p&gt;以下是阅读所得：&lt;/p&gt;
-&lt;p&gt;设计思维：作为一种思维方式，设计思维关注如何综合处理问题，强调深入理解问题产生的原因和背景，经由深刻洞察和理性分析，通过跨领域、跨界的协作，找出最恰当的解决方案。&lt;/p&gt;
+&lt;p&gt;设计思维：作为一种思维方式，&lt;strong&gt;设计思维关注如何综合处理问题，强调深入理解问题产生的原因和背景，经由深刻洞察和理性分析，通过跨领域、跨界的协作，找出最恰当的解决方案&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;界面设计的评价体系应该如何构建?&lt;/p&gt;
 &lt;p&gt;可用性 (usability) 和吸引人 (emotional aspect) 都是常用的，也很简单的设计原则。有用性这一块有大量的理论、工具、方法或技术支撑，Alan Cooper 的“About Face”(《交互设计精髓》)，Bill Buxton 的 “Sketching User Experiences”等著作都有大量介绍。&lt;/p&gt;
 &lt;p&gt;设计工作中，很长时间没有新的 Idea 出现，工作时间又紧，有一些什么好的工作方法?&lt;/p&gt;
 &lt;p&gt;设计的过程从定义问题开始，而每一个问题又都有很多不同角度、立场、维度和语境的解读；解决痛点是设计的机会，消除问题的源头是设计的机会，用户生活目标的重构也是设计机会；实体产品是解决很多问题的当然选择，交互、体验、服务 则为解决问题提供了另外的思路和途径;技术手段很重要，有时候情感支持也可能更有效；物质满足很现实，意义塑造也不可忽视。&lt;/p&gt;
-&lt;p&gt;跳出当下的设计思路，从另一个角度、到设计过程的另 一个阶段、站在不同的立场、用不同的手段、不同的视觉语言， 新的 Idea 应该层出不穷。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;跳出当下的设计思路，从另一个角度、到设计过程的另 一个阶段、站在不同的立场、用不同的手段、不同的视觉语言&lt;/strong&gt;， 新的 Idea 应该层出不穷。&lt;/p&gt;
 &lt;p&gt;以上阅读所得来自《设计思维：理论与实践》第一期。&lt;/p&gt;
 &lt;h2 id=&#34;二与上级的博弈&#34;&gt;二、与上级的博弈&lt;/h2&gt;
 &lt;p&gt;上级的思考未必是有效的，这个也要考虑到上级的能力。在接到上级的指导、需求时，一定要问为什么，这必须成为根植于心的思维。因为设计的本质就是要解决问题。&lt;/p&gt;
@@ -68,12 +540,12 @@
 <p>以下是个人感想：</p>
 <p>不要抗拒那些理论上说不好的交互。很多东西亲自去尝试先，不要用思想实验去否认一些可能性。将理论生搬硬套地用于实践，其实也不太合理。</p>
 <p>以下是阅读所得：</p>
-<p>设计思维：作为一种思维方式，设计思维关注如何综合处理问题，强调深入理解问题产生的原因和背景，经由深刻洞察和理性分析，通过跨领域、跨界的协作，找出最恰当的解决方案。</p>
+<p>设计思维：作为一种思维方式，<strong>设计思维关注如何综合处理问题，强调深入理解问题产生的原因和背景，经由深刻洞察和理性分析，通过跨领域、跨界的协作，找出最恰当的解决方案</strong>。</p>
 <p>界面设计的评价体系应该如何构建?</p>
 <p>可用性 (usability) 和吸引人 (emotional aspect) 都是常用的，也很简单的设计原则。有用性这一块有大量的理论、工具、方法或技术支撑，Alan Cooper 的“About Face”(《交互设计精髓》)，Bill Buxton 的 “Sketching User Experiences”等著作都有大量介绍。</p>
 <p>设计工作中，很长时间没有新的 Idea 出现，工作时间又紧，有一些什么好的工作方法?</p>
 <p>设计的过程从定义问题开始，而每一个问题又都有很多不同角度、立场、维度和语境的解读；解决痛点是设计的机会，消除问题的源头是设计的机会，用户生活目标的重构也是设计机会；实体产品是解决很多问题的当然选择，交互、体验、服务 则为解决问题提供了另外的思路和途径;技术手段很重要，有时候情感支持也可能更有效；物质满足很现实，意义塑造也不可忽视。</p>
-<p>跳出当下的设计思路，从另一个角度、到设计过程的另 一个阶段、站在不同的立场、用不同的手段、不同的视觉语言， 新的 Idea 应该层出不穷。</p>
+<p><strong>跳出当下的设计思路，从另一个角度、到设计过程的另 一个阶段、站在不同的立场、用不同的手段、不同的视觉语言</strong>， 新的 Idea 应该层出不穷。</p>
 <p>以上阅读所得来自《设计思维：理论与实践》第一期。</p>
 <h2 id="二与上级的博弈">二、与上级的博弈</h2>
 <p>上级的思考未必是有效的，这个也要考虑到上级的能力。在接到上级的指导、需求时，一定要问为什么，这必须成为根植于心的思维。因为设计的本质就是要解决问题。</p>
@@ -122,19 +594,161 @@
     </item>
     
     <item>
-      <title>My First Post</title>
-      <link>https://theboylzh.github.io/blog/posts/my-first-post/</link>
+      <title>摄影困惑：为何会没有东西可拍？</title>
+      <link>http://localhost:1313/blog/posts/my-first-post/</link>
       <pubDate>Sat, 24 May 2025 21:25:17 +0800</pubDate>
       
-      <guid>https://theboylzh.github.io/blog/posts/my-first-post/</guid>
-      <description>&lt;h1 id=&#34;title&#34;&gt;Title&lt;/h1&gt;
-&lt;p&gt;I am happy to see you!&lt;/p&gt;
-&lt;h2 id=&#34;title2&#34;&gt;Title2&lt;/h2&gt;
-&lt;p&gt;No money no talk!&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<h1 id="title">Title</h1>
-<p>I am happy to see you!</p>
-<h2 id="title2">Title2</h2>
-<p>No money no talk!</p>
+      <guid>http://localhost:1313/blog/posts/my-first-post/</guid>
+      <description>&lt;h1 id=&#34;一前言&#34;&gt;一、前言&lt;/h1&gt;
+&lt;p&gt;最近换了等效 35mm 的镜头，拿出去街拍的时候遇到了很多问题。大致上可以挖掘到这些领域的问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;摄影本身&lt;/li&gt;
+&lt;li&gt;思考、认知和行动&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;二摄影思考&#34;&gt;二、摄影思考&lt;/h1&gt;
+&lt;h2 id=&#34;疑惑一摄影的西式审美入侵&#34;&gt;疑惑一：摄影的西式审美入侵&lt;/h2&gt;
+&lt;p&gt;显而易见，摄影技术产生在近代西方世界，伴随着西式文化的入侵，以及其强大的文化话语权，审美趣味基本上就是西式的。&lt;/p&gt;
+&lt;p&gt;这里要思考的是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;我是否被困于西式审美，并强行在国内妄图套公式得到符合西式标准的照片？&lt;/li&gt;
+&lt;li&gt;如何吸取西式审美中的有用部分，并运用到国内？或者说，不同文化下的摄影共性是什么？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;疑惑二摄影美感是否来源于陌生感&#34;&gt;疑惑二：摄影美感是否来源于陌生感&lt;/h2&gt;
+&lt;p&gt;为什么在熟悉的中式环境下，拍不出有美感的照片？&lt;/p&gt;
+&lt;p&gt;有一个帖子蛮有意思，讲的是 Alex Webb 在中国拍照翻车的事情。&lt;a href=&#34;https://www.xiaohongshu.com/discovery/item/65216e29000000001e032795?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABzyZll95I7hK7509xzQq9EABOcPCeaDeaNq0I8AihO7E=&amp;amp;xsec_source=pc_share&#34;&gt;帖子链接&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;在网友的评论中，常认为：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;拍摄地很重要，国内背景杂乱，人物与环境不和谐&lt;/li&gt;
+&lt;li&gt;国外很好找环境与人和谐的地方&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;另外还提到一些值得关注的人，他们在中式环境下，有着独特的个人视角和风格：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;抄表工刘涛&lt;/li&gt;
+&lt;li&gt;疯狂螺丝（&lt;a href=&#34;https://www.xiaohongshu.com/user/profile/5e5e31600000000001005f0e?xsec_token=AB1I7hZIy7IPF5Y694pYusw-esebSXxhck9diffkP-I14=&amp;amp;xsec_source=pc_comment&#34;&gt;小红书&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://imgse.com/i/pVS64hQ&#34;&gt;
+  &lt;img loading=&#34;lazy&#34; src=&#34;https://s21.ax1x.com/2025/05/26/pVS64hQ.png&#34; alt=&#34;pVS64hQ.png&#34;  /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;刘涛也深刻点出了一个观点：&lt;strong&gt;熟悉的固化的环境，要把人和物组合成不一样的东西&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;疑惑三何以觉得没什么好拍&#34;&gt;疑惑三：何以觉得没什么好拍&lt;/h2&gt;
+&lt;p&gt;这个话题，和第二个疑惑是类似的。也就是太熟悉的环境里，需要「新组合」。&lt;/p&gt;
+&lt;p&gt;在&lt;a href=&#34;https://www.xiaohongshu.com/discovery/item/67cbb4cc000000001201f6e6?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABlWZs7LbM-2AlaZF6vwXXUSBYDnHIaG3KkhwGxyDxTAA=&amp;amp;xsec_source=pc_share&#34;&gt;这篇帖子&lt;/a&gt;里，作者提到 Alex Webb 的建议：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Webbs第一堂课就提到了两点。&lt;strong&gt;第一点是：A Sense of Play。要去玩。去试验。不要有任何预制想法。和空间、光线、色彩、一切的一切玩耍。第二点是：Frustration&lt;/strong&gt;。这次深刻体会到摄影是体力活&amp;hellip;&amp;hellip;最高温32、33度——真的拍不动了。但是他们说一定要坚持，拍到最后非常不爽非常沮丧的时候，往往是能抓到最好瞬间的时候。这一点亲自验证了。感觉很奇妙。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;也就是说，在「玩」这件事上，我还没做得很好，很专注。我注意力分散，总是在寻找某个框架内的东西。&lt;/p&gt;
+&lt;h2 id=&#34;行动实验&#34;&gt;行动实验&lt;/h2&gt;
+&lt;p&gt;Deepseek 的一些小建议：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;坚持实施有趣的摄影实验，比如拍摄一周同一个早餐档，以转换视角和观察细微的变化。&lt;/li&gt;
+&lt;li&gt;练习观察力：每日进行&amp;quot;10分钟微观扫描&amp;quot;，聚焦特定元素（如光影形状/肢体语言）；&lt;/li&gt;
+&lt;li&gt;犹豫不定的时候，不妨拍摄10张「不及格照片」&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;三行为洞察&#34;&gt;三、行为洞察&lt;/h1&gt;
+&lt;h2 id=&#34;摄影行为的-abc-分析&#34;&gt;摄影行为的 ABC 分析&lt;/h2&gt;
+&lt;p&gt;我在面对摄影问题的时候，我的思维模式是什么样的？我采取了什么行动？&lt;/p&gt;
+&lt;p&gt;场景：在街上拍了好多照片，走了好多路，观察了许多事物。但仍旧没有拍出心里喜欢的认可的照片，身体非常疲惫，感觉茫然。&lt;/p&gt;
+&lt;p&gt;想法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;35mm 这个焦段真难拍&lt;/li&gt;
+&lt;li&gt;街拍真难拍，可能是西式审美限制了我，让我在真实场景下的照片套不进西方框架&lt;/li&gt;
+&lt;li&gt;也许是需要「陌生感」，但太熟悉的环境我发现不了任何美&lt;/li&gt;
+&lt;li&gt;我拍这些东西有什么意义？貌似并没有打动我&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;结果：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;情绪上感到沮丧和疲惫&lt;/li&gt;
+&lt;li&gt;行为上，并没有进一步去探索这背后的问题和思考解决方案，而是搁置不管&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;思维模式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;可取之处在于能够跳出具体，进行抽象且第三方的思考，重点认识到可能是被灌输了某种美学观念，想要在现实中套公式但失败&lt;/li&gt;
+&lt;li&gt;基于AI - 我的思维模式有着二元对立以及对自己有严苛的高要求。即，如果照片没有达到好的程度，便会感觉痛苦和失望。同时，如果不符合某种标准，那这些照片就不具备任何价值。&lt;/li&gt;
+&lt;li&gt;严苛的评价标准可能会导致丧失了品味生活中微笑的幸福，需要警惕&lt;/li&gt;
+&lt;li&gt;严苛的标准背后究竟在迎合谁？是否意味着内心的空洞，想要标新立异获得他人的认可？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;持续追问&#34;&gt;持续追问&lt;/h2&gt;
+&lt;p&gt;尝试用 CBT 的追问来思考：&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="一前言">一、前言</h1>
+<p>最近换了等效 35mm 的镜头，拿出去街拍的时候遇到了很多问题。大致上可以挖掘到这些领域的问题：</p>
+<ol>
+<li>摄影本身</li>
+<li>思考、认知和行动</li>
+</ol>
+<h1 id="二摄影思考">二、摄影思考</h1>
+<h2 id="疑惑一摄影的西式审美入侵">疑惑一：摄影的西式审美入侵</h2>
+<p>显而易见，摄影技术产生在近代西方世界，伴随着西式文化的入侵，以及其强大的文化话语权，审美趣味基本上就是西式的。</p>
+<p>这里要思考的是：</p>
+<ol>
+<li>我是否被困于西式审美，并强行在国内妄图套公式得到符合西式标准的照片？</li>
+<li>如何吸取西式审美中的有用部分，并运用到国内？或者说，不同文化下的摄影共性是什么？</li>
+</ol>
+<h2 id="疑惑二摄影美感是否来源于陌生感">疑惑二：摄影美感是否来源于陌生感</h2>
+<p>为什么在熟悉的中式环境下，拍不出有美感的照片？</p>
+<p>有一个帖子蛮有意思，讲的是 Alex Webb 在中国拍照翻车的事情。<a href="https://www.xiaohongshu.com/discovery/item/65216e29000000001e032795?source=webshare&amp;xhsshare=pc_web&amp;xsec_token=ABzyZll95I7hK7509xzQq9EABOcPCeaDeaNq0I8AihO7E=&amp;xsec_source=pc_share">帖子链接</a>。</p>
+<p>在网友的评论中，常认为：</p>
+<ul>
+<li>拍摄地很重要，国内背景杂乱，人物与环境不和谐</li>
+<li>国外很好找环境与人和谐的地方</li>
+</ul>
+<p>另外还提到一些值得关注的人，他们在中式环境下，有着独特的个人视角和风格：</p>
+<ul>
+<li>抄表工刘涛</li>
+<li>疯狂螺丝（<a href="https://www.xiaohongshu.com/user/profile/5e5e31600000000001005f0e?xsec_token=AB1I7hZIy7IPF5Y694pYusw-esebSXxhck9diffkP-I14=&amp;xsec_source=pc_comment">小红书</a>）</li>
+<li></li>
+</ul>
+<p><a href="https://imgse.com/i/pVS64hQ">
+  <img loading="lazy" src="https://s21.ax1x.com/2025/05/26/pVS64hQ.png" alt="pVS64hQ.png"  /></a></p>
+<p>刘涛也深刻点出了一个观点：<strong>熟悉的固化的环境，要把人和物组合成不一样的东西</strong>。</p>
+<h2 id="疑惑三何以觉得没什么好拍">疑惑三：何以觉得没什么好拍</h2>
+<p>这个话题，和第二个疑惑是类似的。也就是太熟悉的环境里，需要「新组合」。</p>
+<p>在<a href="https://www.xiaohongshu.com/discovery/item/67cbb4cc000000001201f6e6?source=webshare&amp;xhsshare=pc_web&amp;xsec_token=ABlWZs7LbM-2AlaZF6vwXXUSBYDnHIaG3KkhwGxyDxTAA=&amp;xsec_source=pc_share">这篇帖子</a>里，作者提到 Alex Webb 的建议：</p>
+<blockquote>
+<p>The Webbs第一堂课就提到了两点。<strong>第一点是：A Sense of Play。要去玩。去试验。不要有任何预制想法。和空间、光线、色彩、一切的一切玩耍。第二点是：Frustration</strong>。这次深刻体会到摄影是体力活&hellip;&hellip;最高温32、33度——真的拍不动了。但是他们说一定要坚持，拍到最后非常不爽非常沮丧的时候，往往是能抓到最好瞬间的时候。这一点亲自验证了。感觉很奇妙。</p></blockquote>
+<p>也就是说，在「玩」这件事上，我还没做得很好，很专注。我注意力分散，总是在寻找某个框架内的东西。</p>
+<h2 id="行动实验">行动实验</h2>
+<p>Deepseek 的一些小建议：</p>
+<ul>
+<li>坚持实施有趣的摄影实验，比如拍摄一周同一个早餐档，以转换视角和观察细微的变化。</li>
+<li>练习观察力：每日进行&quot;10分钟微观扫描&quot;，聚焦特定元素（如光影形状/肢体语言）；</li>
+<li>犹豫不定的时候，不妨拍摄10张「不及格照片」</li>
+</ul>
+<h1 id="三行为洞察">三、行为洞察</h1>
+<h2 id="摄影行为的-abc-分析">摄影行为的 ABC 分析</h2>
+<p>我在面对摄影问题的时候，我的思维模式是什么样的？我采取了什么行动？</p>
+<p>场景：在街上拍了好多照片，走了好多路，观察了许多事物。但仍旧没有拍出心里喜欢的认可的照片，身体非常疲惫，感觉茫然。</p>
+<p>想法：</p>
+<ol>
+<li>35mm 这个焦段真难拍</li>
+<li>街拍真难拍，可能是西式审美限制了我，让我在真实场景下的照片套不进西方框架</li>
+<li>也许是需要「陌生感」，但太熟悉的环境我发现不了任何美</li>
+<li>我拍这些东西有什么意义？貌似并没有打动我</li>
+</ol>
+<p>结果：</p>
+<ol>
+<li>情绪上感到沮丧和疲惫</li>
+<li>行为上，并没有进一步去探索这背后的问题和思考解决方案，而是搁置不管</li>
+</ol>
+<p>思维模式：</p>
+<ol>
+<li>可取之处在于能够跳出具体，进行抽象且第三方的思考，重点认识到可能是被灌输了某种美学观念，想要在现实中套公式但失败</li>
+<li>基于AI - 我的思维模式有着二元对立以及对自己有严苛的高要求。即，如果照片没有达到好的程度，便会感觉痛苦和失望。同时，如果不符合某种标准，那这些照片就不具备任何价值。</li>
+<li>严苛的评价标准可能会导致丧失了品味生活中微笑的幸福，需要警惕</li>
+<li>严苛的标准背后究竟在迎合谁？是否意味着内心的空洞，想要标新立异获得他人的认可？</li>
+</ol>
+<h2 id="持续追问">持续追问</h2>
+<p>尝试用 CBT 的追问来思考：</p>
+<h3 id="如果没有拍到好照片会发生什么可怕的事情吗">如果没有拍到好照片，会发生什么可怕的事情吗？</h3>
+<p>答：不会发生什么可怕的事情，日子也依旧平淡</p>
+<h3 id="但是你觉得非常痛苦这可能是因为什么呢">但是你觉得非常痛苦，这可能是因为什么呢？</h3>
+<p>答：可能是对自己有种不切实际的幻想和高要求，以及对街拍摄影有着不合理的期待，认为出街短时间内必须要有好作品</p>
+<h3 id="除此之外还有什么可能的原因呢">除此之外，还有什么可能的原因呢？</h3>
+<p>答：可能想要获得他人的认可，以补偿自己现在无业无能的状态，或者一直以来的自卑内核</p>
+<h3 id="有什么更好的替代思维吗">有什么更好的替代思维吗？</h3>
+<p>答：也许我不必要追求他人认可，更好的方式应该是洞察个体所面对的社会性规则如何导致人陷入「认可」的漩涡，以及在心理层面上对认可的深度认识。最好能达到不惧怕「没人认可」的通达境界。但这个存在着「理想」和「高标准」，未必十分妥当，仍需探索和思考。</p>
+<p>有个观点说得好，将自己的价值依托在他人和社会的规则中，本质上是在「取悦他人」。这也是一种远离自我的做法。</p>
+<p>如果用 CBT 的中间信念来表达这些隐藏的思想的话。可能是：</p>
+<blockquote>
+<p>没有获得他人认可是可怕的，我应该要在摄影上拍出非常独特、与众不同的照片来获得他人认可。如果我拍出独特的好照片，我就能获得他人的认可。</p></blockquote>
 ]]></content:encoded>
     </item>
     

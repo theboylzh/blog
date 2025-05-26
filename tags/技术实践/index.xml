@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>技术实践 on 去顽野</title>
+    <link>http://localhost:1313/blog/tags/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/</link>
+    <description>Recent content in 技术实践 on 去顽野</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 May 2025 14:19:33 +0800</lastBuildDate><atom:link href="http://localhost:1313/blog/tags/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo &#43; GitHub，快速搭建个人博客</title>
+      <link>http://localhost:1313/blog/posts/hugo-practice/</link>
+      <pubDate>Mon, 26 May 2025 14:19:33 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/posts/hugo-practice/</guid>
+      <description>&lt;h1 id=&#34;一github-准备工作&#34;&gt;一、GitHub 准备工作&lt;/h1&gt;
+&lt;p&gt;本文默认已经安装好 Git、Homebrew 等多种配置。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;创建仓库，很简单，不说了&lt;/li&gt;
+&lt;li&gt;开启 GitHub Pages，也不说了&lt;/li&gt;
+&lt;li&gt;建立与 GitHub 的 SSH 连接&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;建立-ssh-连接&#34;&gt;建立 SSH 连接&lt;/h2&gt;
+&lt;p&gt;在本地终端输入，创建私钥。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 创建私钥，邮箱换成你自己的 Github 注册邮箱
+ssh-keygen -t ed25519 -C &amp;#34;xxxx@163.com&amp;#34;   
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这时候使用命令可以查看已创建的密钥。密钥的结构类似 &lt;code&gt;id_ed25519.pub&lt;/code&gt;。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 查看已创建的密钥
+ls -al ~/.ssh  
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;复制公钥，本地终端输入代码，回车后默认复制到剪切板（公钥记得替换成自己的）。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 复制公钥
+pbcopy &amp;lt; ~/.ssh/id_ed25519.pub
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;粘贴到 Github：在 Github&amp;ndash;Settings&amp;ndash;SSH and GPG Keys中，点击「Add SSH Key」，粘贴即可添加成功。&lt;/p&gt;
+&lt;h1 id=&#34;二hugo-安装极速启动&#34;&gt;二、Hugo 安装+极速启动&lt;/h1&gt;
+&lt;h2 id=&#34;安装-hugo&#34;&gt;安装 Hugo&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install hugo
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;新建项目&#34;&gt;新建项目&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hugo new site blog
+
+# 返回信息
+Congratulations! Your new Hugo site was created in /Users/lzh/blog.
+
+Just a few more steps...
+
+
+1. Change the current directory to /Users/lzh/blog.
+
+2. Create or install a theme:
+
+   - Create a new theme with the command &amp;#34;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;#34;
+
+   - Or, install a theme from https://themes.gohugo.io/
+
+3. Edit hugo.toml, setting the &amp;#34;theme&amp;#34; property to the theme name.
+
+4. Create new content with the command &amp;#34;hugo new content &amp;lt;SECTIONNAME&amp;gt;/&amp;lt;FILENAME&amp;gt;.&amp;lt;FORMAT&amp;gt;&amp;#34;.
+
+5. Start the embedded web server with the command &amp;#34;hugo server --buildDrafts&amp;#34;.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这里信息如下：&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<h1 id="一github-准备工作">一、GitHub 准备工作</h1>
+<p>本文默认已经安装好 Git、Homebrew 等多种配置。</p>
+<ol>
+<li>创建仓库，很简单，不说了</li>
+<li>开启 GitHub Pages，也不说了</li>
+<li>建立与 GitHub 的 SSH 连接</li>
+</ol>
+<h2 id="建立-ssh-连接">建立 SSH 连接</h2>
+<p>在本地终端输入，创建私钥。</p>
+<pre tabindex="0"><code># 创建私钥，邮箱换成你自己的 Github 注册邮箱
+ssh-keygen -t ed25519 -C &#34;xxxx@163.com&#34;   
+</code></pre><p>这时候使用命令可以查看已创建的密钥。密钥的结构类似 <code>id_ed25519.pub</code>。</p>
+<pre tabindex="0"><code># 查看已创建的密钥
+ls -al ~/.ssh  
+</code></pre><p>复制公钥，本地终端输入代码，回车后默认复制到剪切板（公钥记得替换成自己的）。</p>
+<pre tabindex="0"><code># 复制公钥
+pbcopy &lt; ~/.ssh/id_ed25519.pub
+</code></pre><p>粘贴到 Github：在 Github&ndash;Settings&ndash;SSH and GPG Keys中，点击「Add SSH Key」，粘贴即可添加成功。</p>
+<h1 id="二hugo-安装极速启动">二、Hugo 安装+极速启动</h1>
+<h2 id="安装-hugo">安装 Hugo</h2>
+<pre tabindex="0"><code>brew install hugo
+</code></pre><h2 id="新建项目">新建项目</h2>
+<pre tabindex="0"><code>hugo new site blog
+
+# 返回信息
+Congratulations! Your new Hugo site was created in /Users/lzh/blog.
+
+Just a few more steps...
+
+
+1. Change the current directory to /Users/lzh/blog.
+
+2. Create or install a theme:
+
+   - Create a new theme with the command &#34;hugo new theme &lt;THEMENAME&gt;&#34;
+
+   - Or, install a theme from https://themes.gohugo.io/
+
+3. Edit hugo.toml, setting the &#34;theme&#34; property to the theme name.
+
+4. Create new content with the command &#34;hugo new content &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.&lt;FORMAT&gt;&#34;.
+
+5. Start the embedded web server with the command &#34;hugo server --buildDrafts&#34;.
+</code></pre><p>这里信息如下：</p>
+<ol>
+<li>
+<p>将当前目录切换到 <code>/Users/lzh/blog</code>。</p>
+</li>
+<li>
+<p>创建或安装一个主题：</p>
+<ul>
+<li>使用 <code>hugo new theme &lt;THEMENAME&gt;</code> 创建一个新主题</li>
+<li>或者，从 <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a> 安装一个主题。</li>
+</ul>
+</li>
+<li>
+<p>编辑 <code>hugo.toml</code>，将“theme”属性设置为主题名称。</p>
+</li>
+<li>
+<p>使用命令<code>hugo new content &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.&lt;FORMAT&gt;</code>创建新内容。</p>
+</li>
+<li>
+<p>使用命令<code>hugo server --buildDrafts</code>启动内置的Web服务器。</p>
+</li>
+</ol>
+<h2 id="安装主题">安装主题</h2>
+<p>这一步很简单：</p>
+<ol>
+<li>在模版官网下载即可</li>
+<li>把文件放到项目根目录的 themes 文件夹内</li>
+<li>打开 hugo.toml，新增</li>
+</ol>
+<pre tabindex="0"><code>theme = &lt;Theme Name&gt;
+</code></pre><h2 id="创建新的内容">创建新的内容</h2>
+<p>尝试在 post 分类里创建一个叫 my-first-post.md 的文件。</p>
+<pre tabindex="0"><code>hugo new content/posts/my-first-post.md
+</code></pre><h2 id="启动本地网页">启动本地网页</h2>
+<pre tabindex="0"><code>hugo server --buildDrafts
+</code></pre><h2 id="补充主题和网址信息">补充主题和网址信息</h2>
+<pre tabindex="0"><code>hugo --theme=PaperMod --baseURL &#34;https://theboylzh.github.io/blog&#34;
+</code></pre><h1 id="三部署到-github">三、部署到 GitHub</h1>
+<h2 id="如何部署">如何部署</h2>
+<p>注意！在创建的 blog 目录中，<strong>cd 进入 public 文件夹</strong>。</p>
+<pre tabindex="0"><code># 初始化git
+git init
+
+# 添加全新远程
+git remote add origin git@github.com:theboylzh/blog.git
+
+# 拉取仓库
+git pull
+
+# 为本地main设置上游分支，推送代码上去后再执行
+git branch --set-upstream-to=origin/main main
+</code></pre><p>注意，先拉数据再推送。不然会出问题。</p>
+<pre tabindex="0"><code>git add .
+git commit -m &#34;初始提交&#34;
+git push -f origin main 
+</code></pre><h2 id="问题404">问题：404</h2>
+<p>将整个目录 push 了，其实只要将 public 推到 GitHub 即可。FUCK！！！</p>
+<h1 id="四其他功能">四、其他功能</h1>
+<h2 id="参考文章">参考文章</h2>
+<p>超级详细的搭建教程《<a href="https://jianzhnie.github.io/post/hugo_site/">Hugo + Github Pages 搭建个人博客</a>》</p>
+<h2 id="添加搜索">添加搜索</h2>
+<ol>
+<li>在 <code>content</code> 目录新建一个 <code>search.md</code></li>
+<li>在 <code>search.md</code> 头部信息中改成如下（<code>title</code>、<code>placeholder</code> 可以随便改）</li>
+</ol>
+<pre tabindex="0"><code>+++
+
+date = &#39;2025-05-24T23:52:17+08:00&#39;
+
+draft = false
+
+title = &#39;想找点特别的？&#39;
+
+layout = &#39;search&#39;
+
+summary = &#39;search&#39;
+
+placeholder = &#39;输入关键词&#39;
+
++++
+</code></pre><p>在 <code>hugo.toml</code> 中，添加下面代码，其中 <code>name</code> 可以修改。</p>
+<pre tabindex="0"><code>[outputs]
+home = [ &#34;HTML&#34;, &#34;RSS&#34;, &#34;JSON&#34; ]
+
+[[menu.main]]
+name = &#34;Search&#34;
+url = &#34;search/&#34;
+weight = 10
+
+[params.fuseOpts]
+isCaseSensitive = false
+includeMatches = true
+shouldSort = true
+location = 0
+distance = 1_000
+threshold = 0.4
+minMatchCharLength = 0
+keys = [ &#34;title&#34;, &#34;permalink&#34;, &#34;summary&#34;, &#34;content&#34; ]
+</code></pre><p>实测运行效果良好。</p>
+<h2 id="添加about页面">添加About页面</h2>
+<p>思路如下：</p>
+<ol>
+<li>创建一个菜单，以及一个 About 页面</li>
+<li>把该页面的渲染方式改成单独渲染，而非文章列表</li>
+</ol>
+<p>操作步骤：</p>
+<ol>
+<li><strong>切换到站点目录并创建页面</strong></li>
+</ol>
+<pre tabindex="0"><code>hugo new content/about/index.md
+</code></pre><ol start="2">
+<li><strong>编辑创建的页面</strong>：打开你创建的页面。删除页面前言中的 <code>draft: true</code> 条目，并在日期条目下方粘贴以下代码</li>
+</ol>
+<pre tabindex="0"><code>url = &#39;about&#39;
+[_build]
+  list = &#39;never&#39;
+</code></pre><ul>
+<li>所以，你的页面现在应该看起来像这样（去掉 Draft 和 Date）：</li>
+</ul>
+<pre tabindex="0"><code>---
+title = &#39;About&#39;
+url = &#39;about&#39;
+[_build]
+list = &#39;never&#39;
+---
+your content here
+(I recommend deleting the date too).
+</code></pre><ol start="2">
+<li><strong>配置菜单</strong>：在 <code>hugo.toml</code> 文件中配置菜单</li>
+</ol>
+<pre tabindex="0"><code>[menu]
+     [[menu.main]]
+        name = &#34;About&#34;
+        pageRef = &#34;/about&#34;
+        weight = 10
+</code></pre><ol start="3">
+<li><strong>运行 Hugo 服务器并查看页面</strong>：运行以下命令启动 Hugo 服务器</li>
+</ol>
+<pre tabindex="0"><code># 构建网站
+hugo
+
+# 启动服务
+hugo server
+</code></pre><p>然后打开页面。链接应该可以按预期工作。</p>
+<h2 id="添加顶部菜单">添加顶部菜单</h2>
+<p>👉 细节可以查看<a href="https://gohugo.io/configuration/menus/">官方教程文章</a>，挺复杂的，强烈建议问 GPT。</p>
+<p>这里要注意，如果上文已经添加了 About，要在代码上适当兼容一下，不要重复了。</p>
+<p>导航栏菜单有很多复杂的玩法，包括顶部、底部、侧边、子菜单、图标等等。这里只实践最简单的做法，就是点击某个菜单，进入到一个文章列表这样的情况。</p>
+<p>我希望有一个 Post 菜单，点击后，自动展示 <code>content/posts</code> 目录下的文件。</p>
+<p>在 <code>hugo.toml</code> 中添加</p>
+<pre tabindex="0"><code>[[menu.main]]
+name = &#34;Post&#34;
+url = &#34;/posts/&#34;
+weight = 10
+</code></pre><p>如果你有多个菜单，那可以这么写：</p>
+<pre tabindex="0"><code>[menu]
+ [[menu.main]]
+    name = &#34;About&#34;
+    pageRef = &#34;/about&#34;
+    weight = 10
+
+ [[menu.main]]
+    name = &#34;Search&#34;
+    url = &#34;search/&#34;
+    weight = 10
+
+ [[menu.main]]
+    name = &#34;Post&#34;
+    weight = 10
+    url = &#34;/posts/&#34;
+</code></pre><h2 id="添加分类-tags">添加分类 tags</h2>
+<p>hugo 支持 <code>categories</code> 和 <code>tags</code>。但我们为了简化，只使用其中一种就好了。</p>
+<h3 id="在文章中添加标签">在文章中添加标签</h3>
+<pre tabindex="0"><code>tags = [ &#34;体验设计&#34;, &#34;设计思维&#34; ]
+</code></pre><h3 id="在配置文件中增加菜单">在配置文件中增加菜单</h3>
+<pre tabindex="0"><code>
+ [[menu.main]]
+    name = &#34;Tags&#34;
+    url = &#34;/tags/&#34;
+    weight = 3
+</code></pre><h2 id="修改社交媒体图标">修改社交媒体图标</h2>
+<p>由于换了 PaperModX 主题，方式有点不一样。</p>
+<p>在配置文件中，</p>
+<pre tabindex="0"><code>[[params.socialIcons]]
+name = &#34;github-simple&#34;
+url = &#34;https://github.com/theboylzh&#34;
+
+[[params.socialIcons]]
+name = &#34;email&#34;
+url = &#34;mailto:theboylzh@163.com&#34;
+
+[[params.socialIcons]]
+name = &#34;xhs2&#34;
+url = &#34;https://www.xiaohongshu.com/user/profile/65cc47e7000000000401c841&#34;
+</code></pre><p>只要换上对应的 name 即可显示图标，可用的图标在<code>data/svg.toml</code>，也可以参考这个<a href="https://reorx.github.io/hugo-PaperModX/docs/icons_preview/">网页</a>。但如果内置的没有呢？我们可以去 <a href="https://simpleicons.org/?q=xiao">simple icon</a>，复制其中的 svg 代码到 svg.toml 文件中。</p>
+<p>先把 <code>svg.toml</code> 中的代码片段复制一份，替换其中的名字、path 就可以，不然很容易格式报错。</p>
+<h2 id="profile-mode-中修改头像">Profile Mode 中修改头像</h2>
+<ol>
+<li>在 static 目录新建 <code>images</code> 文件夹，加入图片，如 <code>avatar.png</code>。</li>
+<li>在配置中写入<code> imageUrl = &quot;images/avatar-no-bg.png&quot;</code></li>
+<li>使用 hugo 命令构建，可在 <code>public</code> 文件内查看图片资源在哪</li>
+</ol>
+<h2 id="构建注意事项">构建注意事项</h2>
+<p>在切换了新的主题后，使用 hugo 命令最好用 <code>--baseURL &quot;&lt;https://&lt;username&gt;.github.io/&lt;repo name&gt;&gt;&quot;</code>。例如：</p>
+<pre tabindex="0"><code>hugo --baseURL &#34;https://theboylzh.github.io/blog/&#34;
+</code></pre><p>这样部署后的网页才能正确引用地址，否则会出错。</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
