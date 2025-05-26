@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>去顽野</title>
-    <link>http://localhost:1313/blog/</link>
+    <link>https://theboylzh.github.io/blog/</link>
     <description>Recent content on 去顽野</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 May 2025 17:32:58 +0800</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 May 2025 17:32:58 +0800</lastBuildDate><atom:link href="https://theboylzh.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>暗黑模式？So Easy！</title>
-      <link>http://localhost:1313/blog/posts/dark-mode/</link>
+      <link>https://theboylzh.github.io/blog/posts/dark-mode/</link>
       <pubDate>Mon, 26 May 2025 17:32:58 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/posts/dark-mode/</guid>
+      <guid>https://theboylzh.github.io/blog/posts/dark-mode/</guid>
       <description>&lt;h1 id=&#34;一暗黑模式的前世今生&#34;&gt;一、暗黑模式的前世今生&lt;/h1&gt;
 &lt;h2 id=&#34;什么是暗黑模式&#34;&gt;什么是暗黑模式&lt;/h2&gt;
 &lt;p&gt;暗黑模式是指软件的深色界面。这里需要注意，暗黑模式和护眼模式是两种概念。&lt;/p&gt;
@@ -179,10 +179,10 @@
     
     <item>
       <title>Hugo &#43; GitHub，快速搭建个人博客</title>
-      <link>http://localhost:1313/blog/posts/hugo-practice/</link>
+      <link>https://theboylzh.github.io/blog/posts/hugo-practice/</link>
       <pubDate>Mon, 26 May 2025 14:19:33 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/posts/hugo-practice/</guid>
+      <guid>https://theboylzh.github.io/blog/posts/hugo-practice/</guid>
       <description>&lt;h1 id=&#34;一github-准备工作&#34;&gt;一、GitHub 准备工作&lt;/h1&gt;
 &lt;p&gt;本文默认已经安装好 Git、Homebrew 等多种配置。&lt;/p&gt;
 &lt;ol&gt;
@@ -481,10 +481,10 @@ url = &#34;https://www.xiaohongshu.com/user/profile/65cc47e7000000000401c841&#34
     
     <item>
       <title>设计碎碎念</title>
-      <link>http://localhost:1313/blog/posts/design-think/</link>
+      <link>https://theboylzh.github.io/blog/posts/design-think/</link>
       <pubDate>Sat, 24 May 2025 23:48:17 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/posts/design-think/</guid>
+      <guid>https://theboylzh.github.io/blog/posts/design-think/</guid>
       <description>&lt;h2 id=&#34;一小的实践设计思维&#34;&gt;一、小的实践&amp;amp;设计思维&lt;/h2&gt;
 &lt;p&gt;以下是个人感想：&lt;/p&gt;
 &lt;p&gt;不要抗拒那些理论上说不好的交互。很多东西亲自去尝试先，不要用思想实验去否认一些可能性。将理论生搬硬套地用于实践，其实也不太合理。&lt;/p&gt;
@@ -595,10 +595,10 @@ url = &#34;https://www.xiaohongshu.com/user/profile/65cc47e7000000000401c841&#34
     
     <item>
       <title>摄影困惑：为何会没有东西可拍？</title>
-      <link>http://localhost:1313/blog/posts/my-first-post/</link>
+      <link>https://theboylzh.github.io/blog/posts/my-first-post/</link>
       <pubDate>Sat, 24 May 2025 21:25:17 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/posts/my-first-post/</guid>
+      <guid>https://theboylzh.github.io/blog/posts/my-first-post/</guid>
       <description>&lt;h1 id=&#34;一前言&#34;&gt;一、前言&lt;/h1&gt;
 &lt;p&gt;最近换了等效 35mm 的镜头，拿出去街拍的时候遇到了很多问题。大致上可以挖掘到这些领域的问题：&lt;/p&gt;
 &lt;ol&gt;

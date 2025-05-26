@@ -2,39 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/posts/</loc>
+    <loc>https://theboylzh.github.io/blog/posts/</loc>
     <lastmod>2025-05-26T17:32:58+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/</loc>
+    <loc>https://theboylzh.github.io/blog/tags/</loc>
     <lastmod>2025-05-26T17:32:58+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://theboylzh.github.io/blog/</loc>
     <lastmod>2025-05-26T17:32:58+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/dark-mode/</loc>
+    <loc>https://theboylzh.github.io/blog/posts/dark-mode/</loc>
     <lastmod>2025-05-26T17:32:58+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%80%83/</loc>
+    <loc>https://theboylzh.github.io/blog/tags/%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%80%83/</loc>
     <lastmod>2025-05-26T17:32:58+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/hugo-practice/</loc>
+    <loc>https://theboylzh.github.io/blog/posts/hugo-practice/</loc>
     <lastmod>2025-05-26T14:19:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/</loc>
+    <loc>https://theboylzh.github.io/blog/tags/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/</loc>
     <lastmod>2025-05-26T14:19:33+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/search/</loc>
+    <loc>https://theboylzh.github.io/blog/search/</loc>
     <lastmod>2025-05-24T23:52:17+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/design-think/</loc>
+    <loc>https://theboylzh.github.io/blog/posts/design-think/</loc>
     <lastmod>2025-05-24T23:48:17+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/posts/my-first-post/</loc>
+    <loc>https://theboylzh.github.io/blog/posts/my-first-post/</loc>
     <lastmod>2025-05-24T21:25:17+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/tags/%E6%9D%82%E8%B0%88/</loc>
+    <loc>https://theboylzh.github.io/blog/tags/%E6%9D%82%E8%B0%88/</loc>
     <lastmod>2025-05-24T21:25:17+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/categories/</loc>
+    <loc>https://theboylzh.github.io/blog/categories/</loc>
   </url>
 </urlset>
